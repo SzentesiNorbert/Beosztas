@@ -1,0 +1,97 @@
+
+
+.t1 {
+  border: 1px solid black;
+  font-weight: bold;
+  text-transform: uppercase;
+  vertical-align: middle;
+  text-align: center;
+}
+th {
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+.datum {
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+.ures {
+  display: none;
+}
+.uresP {
+  display: none;
+}
+.uresB {
+  display: none;
+}
+.uresSZ {
+  display: none;
+}
+.uresKorr {
+width: 30px;
+}
+
+.click {
+  cursor: pointer;
+}
+.clickP {
+  cursor: pointer;
+}
+.clickSZ {
+  cursor: pointer;
+}
+
+.ures + .click:before {
+  width: content;
+  height: 20px;
+  border-radius: 2px;
+  background: white;
+  position: relative;
+  display: block;
+  content:"";
+}
+
+.uresP + .clickP:before {
+  width: content;
+  height: 20px;
+  border-radius: 2px;
+  background: white;
+  position: relative;
+  display: block;
+  content: "";
+}
+
+.uresSZ + .clickSZ:before {
+  width: content;
+  height: 20px;
+  border-radius: 2px;
+  background: white;
+  position: relative;
+  display: block;
+  content: "";
+}
+
+.uresKorr + .clickKorr:before {
+  width: content;
+  border-radius: 2px;
+  background: white;
+  position: relative;
+  display: block;
+  content: "";
+}
+
+.uresP:checked + .clickP:before {
+  background: blue;
+}
+.uresSZ:checked + .clickSZ:before {
+  background: green;
+}
+
+.ures:checked + .click:before {
+  background: black;
+}
