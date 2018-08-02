@@ -45,6 +45,9 @@ width: 30px;
 .clickSZ {
   cursor: pointer;
 }
+.clickB {
+  cursor: pointer;
+}
 
 .ures + .click:before {
   width: content;
@@ -57,6 +60,15 @@ width: 30px;
 }
 
 .uresP + .clickP:before {
+  width: content;
+  height: 20px;
+  border-radius: 2px;
+  background: white;
+  position: relative;
+  display: block;
+  content: "";
+}
+.uresB + .clickB:before {
   width: content;
   height: 20px;
   border-radius: 2px;
@@ -83,6 +95,10 @@ width: 30px;
   position: relative;
   display: block;
   content: "";
+}
+
+.uresB:checked + .clickB:before {
+  background: yellow;
 }
 
 .uresP:checked + .clickP:before {

@@ -13,9 +13,10 @@
   Dolgozó Keresztneve:<input type="text" id="knev" name="knev"/>
   <button onclick="ujDolg();">Dolgozó</button>
   <hr>
-  <table class="table table-bordered t1"></table><br>
-  <table class="table table-bordered t1">
 
+  <table class="table table-bordered t1"></table><br>
+  <fieldset>
+  <table class="table table-bordered t1">
     <tr class="t1">
       <td class="t1 datum">D</td>
       <td class="t1">MN</td>
@@ -24,231 +25,291 @@
       <td class="t1">&nbsp B &nbsp</td>
       <td class="t1">+/-</td>
     </tr>
+
     <tr class="t1">
       <td class="t1 datum">1</td>
-      <td class="t1" onclick="myInputM()"><input type="checkbox" class="ures" id="myinput" /><label class="click" for="myinput" value="11"></label></td>
-      <td class="t1" onclick="myInputP()"><input type="checkbox" class="uresP" id="myinputP" /><label class="clickP" for="myinputP" value="0"></label></td>
-      <td class="t1" onclick="katt('sz')"><input type="checkbox" class="uresSZ" id="myinputSZ1" /><label class="clickSZ" for="myinputSZ1" value="8"></label></td>
-      <td class="t1" onclick="katt('b')"><input type="checkbox" class="uresB" id="myinputB1" /><label class="clickSZ" for="myinputB1" value="8"></label></td>
-      <td class="t1" onclick="katt('korr')"><input type="number" value="0" class="uresKorr" id="myinputKorr1" /><label class="clickKorr" for="myinputKorr1"></label></td>
+      <td class="t1" onclick="myInputM()"><input type="radio" class="ures" id="myinput" name="beosztas"/><label class="click" for="myinput" value="11"></label></td>
+      <td class="t1" onclick="myInputP()"><input type="radio" class="uresP" id="myinputP" name="beosztas"/><label class="clickP" for="myinputP" value="0"></label></td>
+      <td class="t1" onclick="katt('sz')"><input type="radio" class="uresSZ" id="myinputSZ1" name="beosztas"/><label class="clickSZ" for="myinputSZ1" value="8"></label></td>
+      <td class="t1" onclick="katt('B')"><input type="checkbox" class="uresB" id="myinputB1" name="beosztas"/><label class="clickB" for="myinputB1" value="8"></label></td>
+      <td class="t1" onclick="katt('korr')"><input type="number" value="0" class="uresKorr" id="myinputKorr1" name="beosztas"/><label class="clickKorr" for="myinputKorr1"></label></td>
     </tr>
     <tr class="t1">
       <td class="t1 datum">2</td>
-      <td class="t1" onclick="myInputM()"><input type="checkbox" class="ures" id="myinput2" /><label class="click" for="myinput2" value="11"></label></td>
-      <td class="t1" onclick="katt('pi2')"><input type="checkbox" class="uresP" id="myinputP2" /><label class="clickP" for="myinputP2" value="0"></label></td>
-      <td class="t1" onclick="katt('sz2')"><input type="checkbox" class="uresSZ" id="myinputSZ2" /><label class="clickSZ" for="myinputSZ2" value="8"></label></td>
-      <td class="t1" onclick="katt('b2')"><input type="checkbox" class="uresB" id="myinputB2" /><label class="clickSZ" for="myinputB1" value="8"></label></td>
+      <td class="t1" onclick="myInputM()"><input type="radio" class="ures" id="myinput2" name="beosztas2"/><label class="click" for="myinput2" value="11"></label></td>
+      <td class="t1" onclick="katt('pi2')"><input type="radio" class="uresP" id="myinputP2" name="beosztas2"/><label class="clickP" for="myinputP2" value="0"></label></td>
+      <td class="t1" onclick="katt('sz2')"><input type="radio" class="uresSZ" id="myinputSZ2" name="beosztas2"/><label class="clickSZ" for="myinputSZ2" value="8"></label></td>
+      <td class="t1" onclick="katt('b2')"><input type="checkbox" class="uresB" id="myinputB2" name="beosztas2"/><label class="clickSZ" for="myinputB1" value="8"></label></td>
       <td class="t1" onclick="katt('korr2')"><input type="number" value="0" class="uresKorr" id="myinputKorr2" /><label class="clickKorr" for="myinputKorr2" value="8"></label></td>
 
     </tr>
     <tr class="t1">
       <td class="t1 datum"> 3</td>
-      <td class="t1"><input type="checkbox" class="ures" id="myinput3" /><label class="click" for="myinput3" value="11"></label></td>
-      <td class="t1"><input type="checkbox" class="uresP" id="myinputP3" /><label class="clickP" for="myinputP3" value="0"></label></td>
-      <td class="t1"><input type="checkbox" class="uresSZ" id="myinputSZ3" /><label class="clickSZ" for="myinputSZ3" value="11"></label></td>
-      <td class="t1"> </td>
+      <td class="t1"><input type="radio" class="ures" id="myinput3" name="beosztas3"/><label class="click" for="myinput3" value="11"></label></td>
+      <td class="t1"><input type="radio" class="uresP" id="myinputP3" name="beosztas3"/><label class="clickP" for="myinputP3" value="0"></label></td>
+      <td class="t1"><input type="radio" class="uresSZ" id="myinputSZ3" name="beosztas3"/><label class="clickSZ" for="myinputSZ3" value="11"></label></td>
+      <td class="t1" onclick="katt('b3')"><input type="checkbox" class="uresB" id="myinputB3" name="beosztas3"/><label class="clickSZ" for="myinputB3" value="8"></label></td>
+      <td class="t1" onclick="katt('korr3')"><input type="number" value="0" class="uresKorr" id="myinputKorr3" /><label class="clickKorr" for="myinputKorr3" value="8"></label></td>
+
     </tr>
     <tr class="t1">
       <td class="t1 datum"> 4</td>
-      <td class="t1"><input type="checkbox" class="ures" id="myinput4" /><label class="click" for="myinput4" value="11"></label></td>
-      <td class="t1"><input type="checkbox" class="uresP" id="myinputP4" /><label class="clickP" for="myinputP4" value="0"></label></td>
-      <td class="t1"><input type="checkbox" class="uresSZ" id="myinputSZ4" /><label class="clickSZ" for="myinputSZ4" value="8"></label></td>
-      <td class="t1"> </td>
+      <td class="t1"><input type="radio" class="ures" id="myinput4" name="beosztas4"/><label class="click" for="myinput4" value="11"></label></td>
+      <td class="t1"><input type="radio" class="uresP" id="myinputP4" name="beosztas4"/><label class="clickP" for="myinputP4" value="0"></label></td>
+      <td class="t1"><input type="radio" class="uresSZ" id="myinputSZ4" name="beosztas4"/><label class="clickSZ" for="myinputSZ4" value="8"></label></td>
+      <td class="t1" onclick="katt('b4')"><input type="checkbox" class="uresB" id="myinputB4" name="beosztas4"/><label class="clickSZ" for="myinputB4" value="8"></label></td>
+      <td class="t1" onclick="katt('korr4')"><input type="number" value="0" class="uresKorr" id="myinputKorr4" /><label class="clickKorr" for="myinputKorr4" value="8"></label></td>
+
     </tr>
     <tr class="t1">
       <td class="t1 datum"> 5</td>
-      <td class="t1"><input type="checkbox" class="ures" id="myinput5" /><label class="click" for="myinput5" value="11"></label></td>
-      <td class="t1"><input type="checkbox" class="uresP" id="myinputP5" /><label class="clickP" for="myinputP5" value="0"></label></td>
-      <td class="t1"><input type="checkbox" class="uresSZ" id="myinputSZ5" /><label class="clickSZ" for="myinputSZ5" value="8"></label></td>
-      <td class="t1"> </td>
+      <td class="t1"><input type="radio" class="ures" id="myinput5" name="beosztas5"/><label class="click" for="myinput5" value="11"></label></td>
+      <td class="t1"><input type="radio" class="uresP" id="myinputP5" name="beosztas5"/><label class="clickP" for="myinputP5" value="0"></label></td>
+      <td class="t1"><input type="radio" class="uresSZ" id="myinputSZ5" name="beosztas5"/><label class="clickSZ" for="myinputSZ5" value="8"></label></td>
+      <td class="t1" onclick="katt('b5')"><input type="checkbox" class="uresB" id="myinputB2" name="beosztas5"/><label class="clickSZ" for="myinputB1" value="8"></label></td>
+      <td class="t1" onclick="katt('korr2')"><input type="number" value="0" class="uresKorr" id="myinputKorr2" /><label class="clickKorr" for="myinputKorr2" value="8"></label></td>
+
     </tr>
     <tr class="t1">
       <td class="t1 datum"> 6</td>
-      <td class="t1"><input type="checkbox" class="ures" id="myinput6" /><label class="click" for="myinput6" value="11"></label></td>
-      <td class="t1"><input type="checkbox" class="uresP" id="myinputP6" /><label class="clickP" for="myinputP6" value="0"></label></td>
-      <td class="t1"><input type="checkbox" class="uresSZ" id="myinputSZ6" /><label class="clickSZ" for="myinputSZ6" value="8"></label></td>
-      <td class="t1"> </td>
+      <td class="t1"><input type="radio" class="ures" id="myinput6" name="beosztas6"/><label class="click" for="myinput6" value="11"></label></td>
+      <td class="t1"><input type="radio" class="uresP" id="myinputP6" name="beosztas6"/><label class="clickP" for="myinputP6" value="0"></label></td>
+      <td class="t1"><input type="radio" class="uresSZ" id="myinputSZ6" name="beosztas6"/><label class="clickSZ" for="myinputSZ6" value="8"></label></td>
+      <td class="t1" onclick="katt('b2')"><input type="checkbox" class="uresB" id="myinputB2" name="beosztas6"/><label class="clickSZ" for="myinputB1" value="8"></label></td>
+      <td class="t1" onclick="katt('korr2')"><input type="number" value="0" class="uresKorr" id="myinputKorr2" /><label class="clickKorr" for="myinputKorr2" value="8"></label></td>
+
     </tr>
     <tr class="t1">
       <td class="t1 datum">7</td>
-      <td class="t1"><input type="checkbox" class="ures" id="myinput7" /><label class="click" for="myinput7" value="11"></label></td>
-      <td class="t1"><input type="checkbox" class="uresP" id="myinputP7" /><label class="clickP" for="myinputP7" value="0"></label></td>
-      <td class="t1"><input type="checkbox" class="uresSZ" id="myinputSZ7" /><label class="clickSZ" for="myinputSZ7" value="8"></label></td>
-      <td class="t1"> </td>
+      <td class="t1"><input type="radio" class="ures" id="myinput7" name="beosztas7"/><label class="click" for="myinput7" value="11"></label></td>
+      <td class="t1"><input type="radio" class="uresP" id="myinputP7" name="beosztas7"/><label class="clickP" for="myinputP7" value="0"></label></td>
+      <td class="t1"><input type="radio" class="uresSZ" id="myinputSZ7" name="beosztas7"/><label class="clickSZ" for="myinputSZ7" value="8"></label></td>
+      <td class="t1" onclick="katt('b2')"><input type="checkbox" class="uresB" id="myinputB2" name="beosztas7"/><label class="clickSZ" for="myinputB1" value="8"></label></td>
+      <td class="t1" onclick="katt('korr2')"><input type="number" value="0" class="uresKorr" id="myinputKorr2" /><label class="clickKorr" for="myinputKorr2" value="8"></label></td>
+
     </tr>
     <tr class="t1">
       <td class="t1 datum">8</td>
-      <td class="t1"><input type="checkbox" class="ures" id="myinput8" /><label class="click" for="myinput8" value="11"></label></td>
-      <td class="t1"><input type="checkbox" class="uresP" id="myinputP8" /><label class="clickP" for="myinputP8" value="0"></label></td>
-      <td class="t1"><input type="checkbox" class="uresSZ" id="myinputSZ8" /><label class="clickSZ" for="myinputSZ8" value="8"></label></td>
-      <td class="t1"> </td>
+      <td class="t1"><input type="radio" class="ures" id="myinput8" name="beosztas8"/><label class="click" for="myinput8" value="11"></label></td>
+      <td class="t1"><input type="radio" class="uresP" id="myinputP8" name="beosztas8"/><label class="clickP" for="myinputP8" value="0"></label></td>
+      <td class="t1"><input type="radio" class="uresSZ" id="myinputSZ8" name="beosztas8"/><label class="clickSZ" for="myinputSZ8" value="8"></label></td>
+      <td class="t1" onclick="katt('b2')"><input type="checkbox" class="uresB" id="myinputB2" name="beosztas8"/><label class="clickSZ" for="myinputB1" value="8"></label></td>
+      <td class="t1" onclick="katt('korr2')"><input type="number" value="0" class="uresKorr" id="myinputKorr2" /><label class="clickKorr" for="myinputKorr2" value="8"></label></td>
+
     </tr>
     <tr class="t1">
       <td class="t1 datum">9</td>
-      <td class="t1"><input type="checkbox" class="ures" id="myinput9" /><label class="click" for="myinput9" value="11"></label></td>
-      <td class="t1"><input type="checkbox" class="uresP" id="myinputP9" /><label class="clickP" for="myinputP9" value="0"></label></td>
-      <td class="t1"><input type="checkbox" class="uresSZ" id="myinputSZ9" /><label class="clickSZ" for="myinputSZ9" value="8"></label></td>
-      <td class="t1"> </td>
+      <td class="t1"><input type="radio" class="ures" id="myinput9" name="beosztas9"/><label class="click" for="myinput9" value="11"></label></td>
+      <td class="t1"><input type="radio" class="uresP" id="myinputP9" name="beosztas9"/><label class="clickP" for="myinputP9" value="0"></label></td>
+      <td class="t1"><input type="radio" class="uresSZ" id="myinputSZ9" name="beosztas9"/><label class="clickSZ" for="myinputSZ9" value="8"></label></td>
+      <td class="t1" onclick="katt('b2')"><input type="checkbox" class="uresB" id="myinputB2" name="beosztas9"/><label class="clickSZ" for="myinputB1" value="8"></label></td>
+      <td class="t1" onclick="katt('korr2')"><input type="number" value="0" class="uresKorr" id="myinputKorr2" /><label class="clickKorr" for="myinputKorr2" value="8"></label></td>
+
     </tr>
     <tr class="t1">
       <td class="t1 datum">10</td>
-      <td class="t1"><input type="checkbox" class="ures" id="myinput10" /><label class="click" for="myinput10" value="11"></label></td>
-      <td class="t1"><input type="checkbox" class="uresP" id="myinputP10" /><label class="clickP" for="myinputP10" value="0"></label></td>
-      <td class="t1"><input type="checkbox" class="uresSZ" id="myinputSZ10" /><label class="clickSZ" for="myinputSZ10" value="8"></label></td>
-      <td class="t1"> </td>
+      <td class="t1"><input type="radio" class="ures" id="myinput10" name="beosztas10"/><label class="click" for="myinput10" value="11"></label></td>
+      <td class="t1"><input type="radio" class="uresP" id="myinputP10" name="beosztas10"/><label class="clickP" for="myinputP10" value="0"></label></td>
+      <td class="t1"><input type="radio" class="uresSZ" id="myinputSZ10" name="beosztas10"/><label class="clickSZ" for="myinputSZ10" value="8"></label></td>
+      <td class="t1" onclick="katt('b2')"><input type="checkbox" class="uresB" id="myinputB2" name="beosztas10"/><label class="clickSZ" for="myinputB1" value="8"></label></td>
+      <td class="t1" onclick="katt('korr2')"><input type="number" value="0" class="uresKorr" id="myinputKorr2" /><label class="clickKorr" for="myinputKorr2" value="8"></label></td>
+
     </tr>
     <tr class="t1">
       <td class="t1 datum">11</td>
-      <td class="t1"><input type="checkbox" class="ures" id="myinput11" /><label class="click" for="myinput11" value="11"></label></td>
-      <td class="t1"><input type="checkbox" class="uresP" id="myinputP11" /><label class="clickP" for="myinputP11" value="0"></label></td>
-      <td class="t1"><input type="checkbox" class="uresSZ" id="myinputSZ11" /><label class="clickSZ" for="myinputSZ11" value="8"></label></td>
-      <td class="t1"> </td>
+      <td class="t1"><input type="radio" class="ures" id="myinput11" name="beosztas11"/><label class="click" for="myinput11" value="11"></label></td>
+      <td class="t1"><input type="radio" class="uresP" id="myinputP11" name="beosztas11"/><label class="clickP" for="myinputP11" value="0"></label></td>
+      <td class="t1"><input type="radio" class="uresSZ" id="myinputSZ11" name="beosztas11"/><label class="clickSZ" for="myinputSZ11" value="8"></label></td>
+      <td class="t1" onclick="katt('b2')"><input type="checkbox" class="uresB" id="myinputB2" name="beosztas11"/><label class="clickSZ" for="myinputB1" value="8"></label></td>
+      <td class="t1" onclick="katt('korr2')"><input type="number" value="0" class="uresKorr" id="myinputKorr2" /><label class="clickKorr" for="myinputKorr2" value="8"></label></td>
+
     </tr>
     <tr class="t1">
       <td class="t1 datum">12</td>
-      <td class="t1"><input type="checkbox" class="ures" id="myinput12" /><label class="click" for="myinput12" value="11"></label></td>
-      <td class="t1"><input type="checkbox" class="uresP" id="myinputP12" /><label class="clickP" for="myinputP12" value="0"></label></td>
-      <td class="t1"><input type="checkbox" class="uresSZ" id="myinputSZ12" /><label class="clickSZ" for="myinputSZ12" value="8"></label></td>
-      <td class="t1"> </td>
+      <td class="t1"><input type="radio" class="ures" id="myinput12" name="beosztas12"/><label class="click" for="myinput12" value="11"></label></td>
+      <td class="t1"><input type="radio" class="uresP" id="myinputP12" name="beosztas12"/><label class="clickP" for="myinputP12" value="0"></label></td>
+      <td class="t1"><input type="radio" class="uresSZ" id="myinputSZ12" name="beosztas12"/><label class="clickSZ" for="myinputSZ12" value="8"></label></td>
+      <td class="t1" onclick="katt('b2')"><input type="checkbox" class="uresB" id="myinputB2" name="beosztas12"/><label class="clickSZ" for="myinputB1" value="8"></label></td>
+      <td class="t1" onclick="katt('korr2')"><input type="number" value="0" class="uresKorr" id="myinputKorr2" /><label class="clickKorr" for="myinputKorr2" value="8"></label></td>
+
     </tr>
   </tr>
   <tr class="t1">
     <td class="t1 datum">13</td>
-    <td class="t1"><input type="checkbox" class="ures" id="myinput13" /><label class="click" for="myinput13" value="11"></label></td>
-    <td class="t1"><input type="checkbox" class="uresP" id="myinputP13" /><label class="clickP" for="myinputP13"  value="0"></label></td>
-    <td class="t1"><input type="checkbox" class="uresSZ" id="myinputSZ13" /><label class="clickSZ" for="myinputSZ13"  value="8"></label></td>
-    <td class="t1"> </td>
+    <td class="t1"><input type="radio" class="ures" id="myinput13" name="beosztas13"/><label class="click" for="myinput13" value="11"></label></td>
+    <td class="t1"><input type="radio" class="uresP" id="myinputP13" name="beosztas13"/><label class="clickP" for="myinputP13"  value="0"></label></td>
+    <td class="t1"><input type="radio" class="uresSZ" id="myinputSZ13" name="beosztas13"/><label class="clickSZ" for="myinputSZ13"  value="8"></label></td>
+    <td class="t1" onclick="katt('b2')"><input type="checkbox" class="uresB" id="myinputB2" name="beosztas13"/><label class="clickSZ" for="myinputB1" value="8"></label></td>
+    <td class="t1" onclick="katt('korr2')"><input type="number" value="0" class="uresKorr" id="myinputKorr2" /><label class="clickKorr" for="myinputKorr2" value="8"></label></td>
+
   </tr>
   <tr class="t1">
     <td class="t1 datum">14</td>
-    <td class="t1"><input type="checkbox" class="ures" id="myinput14" /><label class="click" for="myinput14" value="11"></label></td>
-    <td class="t1"><input type="checkbox" class="uresP" id="myinputP14" /><label class="clickP" for="myinputP14" value="0"></label></td>
-    <td class="t1"><input type="checkbox" class="uresSZ" id="myinputSZ14" /><label class="clickSZ" for="myinputSZ14" value="8"></label></td>
-    <td class="t1"> </td>
+    <td class="t1"><input type="radio" class="ures" id="myinput14" name="beosztas14"/><label class="click" for="myinput14" value="11"></label></td>
+    <td class="t1"><input type="radio" class="uresP" id="myinputP14" name="beosztas14"/><label class="clickP" for="myinputP14" value="0"></label></td>
+    <td class="t1"><input type="radio" class="uresSZ" id="myinputSZ14" name="beosztas14"/><label class="clickSZ" for="myinputSZ14" value="8"></label></td>
+    <td class="t1" onclick="katt('b2')"><input type="checkbox" class="uresB" id="myinputB2" name="beosztas14"/><label class="clickSZ" for="myinputB1" value="8"></label></td>
+    <td class="t1" onclick="katt('korr2')"><input type="number" value="0" class="uresKorr" id="myinputKorr2" /><label class="clickKorr" for="myinputKorr2" value="8"></label></td>
+
   </tr>
   <tr class="t1">
     <td class="t1 datum">15</td>
-    <td class="t1"><input type="checkbox" class="ures" id="myinput15" /><label class="click" for="myinput15" value="11" ></label></td>
-    <td class="t1"><input type="checkbox" class="uresP" id="myinputP15" /><label class="clickP" for="myinputP15" value="0"></label></td>
-    <td class="t1"><input type="checkbox" class="uresSZ" id="myinputSZ15" /><label class="clickSZ" for="myinputSZ15" value="8"></label></td>
-    <td class="t1"> </td>
+    <td class="t1"><input type="radio" class="ures" id="myinput15" name="beosztas15"/><label class="click" for="myinput15" value="11" ></label></td>
+    <td class="t1"><input type="radio" class="uresP" id="myinputP15" name="beosztas15"/><label class="clickP" for="myinputP15" value="0"></label></td>
+    <td class="t1"><input type="radio" class="uresSZ" id="myinputSZ15" name="beosztas15"/><label class="clickSZ" for="myinputSZ15" value="8"></label></td>
+    <td class="t1" onclick="katt('b2')"><input type="checkbox" class="uresB" id="myinputB2" name="beosztas15"/><label class="clickSZ" for="myinputB1" value="8"></label></td>
+    <td class="t1" onclick="katt('korr2')"><input type="number" value="0" class="uresKorr" id="myinputKorr2" /><label class="clickKorr" for="myinputKorr2" value="8"></label></td>
+
   </tr>
   <tr class="t1">
     <td class="t1 datum">16</td>
-    <td class="t1"><input type="checkbox" class="ures" id="myinput16" /><label class="click" for="myinput16" value="11"></label></td>
-    <td class="t1"><input type="checkbox" class="uresP" id="myinputP16" /><label class="clickP" for="myinputP16" value="0"></label></td>
-    <td class="t1"><input type="checkbox" class="uresSZ" id="myinputSZ16" /><label class="clickSZ" for="myinputSZ16" value="8"></label></td>
-    <td class="t1"> </td>
+    <td class="t1"><input type="radio" class="ures" id="myinput16" name="beosztas16"/><label class="click" for="myinput16" value="11"></label></td>
+    <td class="t1"><input type="radio" class="uresP" id="myinputP16" name="beosztas16"/><label class="clickP" for="myinputP16" value="0"></label></td>
+    <td class="t1"><input type="radio" class="uresSZ" id="myinputSZ16" name="beosztas16"/><label class="clickSZ" for="myinputSZ16" value="8"></label></td>
+    <td class="t1" onclick="katt('b2')"><input type="checkbox" class="uresB" id="myinputB2" name="beosztas16"/><label class="clickSZ" for="myinputB1" value="8"></label></td>
+    <td class="t1" onclick="katt('korr2')"><input type="number" value="0" class="uresKorr" id="myinputKorr2" /><label class="clickKorr" for="myinputKorr2" value="8"></label></td>
+
   </tr>
   <tr class="t1">
     <td class="t1 datum">17</td>
-    <td class="t1"><input type="checkbox" class="ures" id="myinput17" /><label class="click" for="myinput17" value="11"></label></td>
-    <td class="t1"><input type="checkbox" class="uresP" id="myinputP17" /><label class="clickP" for="myinputP17" value="0"></label></td>
-    <td class="t1"><input type="checkbox" class="uresSZ" id="myinputSZ17" /><label class="clickSZ" for="myinputSZ17" value="8"></label></td>
-    <td class="t1"> </td>
+    <td class="t1"><input type="radio" class="ures" id="myinput17" name="beosztas17"/><label class="click" for="myinput17" value="11"></label></td>
+    <td class="t1"><input type="radio" class="uresP" id="myinputP17" name="beosztas17"/><label class="clickP" for="myinputP17" value="0"></label></td>
+    <td class="t1"><input type="radio" class="uresSZ" id="myinputSZ17" name="beosztas17"/><label class="clickSZ" for="myinputSZ17" value="8"></label></td>
+    <td class="t1" onclick="katt('b2')"><input type="checkbox" class="uresB" id="myinputB2" name="beosztas17"/><label class="clickSZ" for="myinputB1" value="8"></label></td>
+    <td class="t1" onclick="katt('korr2')"><input type="number" value="0" class="uresKorr" id="myinputKorr2" /><label class="clickKorr" for="myinputKorr2" value="8"></label></td>
+
   </tr>
   <tr class="t1">
     <td class="t1 datum">18</td>
-    <td class="t1"><input type="checkbox" class="ures" id="myinput18" /><label class="click" for="myinput18" value="11"></label></td>
-    <td class="t1"><input type="checkbox" class="uresP" id="myinputP18" /><label class="clickP" for="myinputP18" value="0"></label></td>
-    <td class="t1"><input type="checkbox" class="uresSZ" id="myinputSZ18" /><label class="clickSZ" for="myinputSZ18" value="8"></label></td>
-    <td class="t1"> </td>
+    <td class="t1"><input type="radio" class="ures" id="myinput18" name="beosztas18"/><label class="click" for="myinput18" value="11"></label></td>
+    <td class="t1"><input type="radio" class="uresP" id="myinputP18" name="beosztas18"/><label class="clickP" for="myinputP18" value="0"></label></td>
+    <td class="t1"><input type="radio" class="uresSZ" id="myinputSZ18" name="beosztas18"/><label class="clickSZ" for="myinputSZ18" value="8"></label></td>
+    <td class="t1" onclick="katt('b2')"><input type="checkbox" class="uresB" id="myinputB2" name="beosztas18"/><label class="clickSZ" for="myinputB1" value="8"></label></td>
+    <td class="t1" onclick="katt('korr2')"><input type="number" value="0" class="uresKorr" id="myinputKorr2" /><label class="clickKorr" for="myinputKorr2" value="8"></label></td>
+
   </tr>
   <tr class="t1">
     <td class="t1 datum">19</td>
-    <td class="t1"><input type="checkbox" class="ures" id="myinput19" /><label class="click" for="myinput19" value="11"></label></td>
-    <td class="t1"><input type="checkbox" class="uresP" id="myinputP19" /><label class="clickP" for="myinputP19" value="0"></label></td>
-    <td class="t1"><input type="checkbox" class="uresSZ" id="myinputSZ19" /><label class="clickSZ" for="myinputSZ19" value="8"></label></td>
-    <td class="t1"> </td>
+    <td class="t1"><input type="radio" class="ures" id="myinput19" name="beosztas19"/><label class="click" for="myinput19" value="11"></label></td>
+    <td class="t1"><input type="radio" class="uresP" id="myinputP19" name="beosztas19"/><label class="clickP" for="myinputP19" value="0"></label></td>
+    <td class="t1"><input type="radio" class="uresSZ" id="myinputSZ19" name="beosztas19"/><label class="clickSZ" for="myinputSZ19" value="8"></label></td>
+    <td class="t1" onclick="katt('b2')"><input type="checkbox" class="uresB" id="myinputB2" name="beosztas19"/><label class="clickSZ" for="myinputB1" value="8"></label></td>
+    <td class="t1" onclick="katt('korr2')"><input type="number" value="0" class="uresKorr" id="myinputKorr2" /><label class="clickKorr" for="myinputKorr2" value="8"></label></td>
+
   </tr>
   <tr class="t1">
     <td class="t1 datum">20</td>
-    <td class="t1"><input type="checkbox" class="ures" id="myinput20" /><label class="click" for="myinput20" value="11"></label></td>
-    <td class="t1"><input type="checkbox" class="uresP" id="myinputP20" /><label class="clickP" for="myinputP20" value="0"></label></td>
-    <td class="t1"><input type="checkbox" class="uresSZ" id="myinputSZ20" /><label class="clickSZ" for="myinputSZ20" value="8"></label></td>
-    <td class="t1"> </td>
+    <td class="t1"><input type="radio" class="ures" id="myinput20" name="beosztas20"/><label class="click" for="myinput20" value="11"></label></td>
+    <td class="t1"><input type="radio" class="uresP" id="myinputP20" name="beosztas20"/><label class="clickP" for="myinputP20" value="0"></label></td>
+    <td class="t1"><input type="radio" class="uresSZ" id="myinputSZ20" name="beosztas20"/><label class="clickSZ" for="myinputSZ20" value="8"></label></td>
+    <td class="t1" onclick="katt('b2')"><input type="checkbox" class="uresB" id="myinputB2" name="beosztas20"/><label class="clickSZ" for="myinputB1" value="8"></label></td>
+    <td class="t1" onclick="katt('korr2')"><input type="number" value="0" class="uresKorr" id="myinputKorr2" /><label class="clickKorr" for="myinputKorr2" value="8"></label></td>
+
   </tr>
   <tr class="t1">
     <td class="t1 datum">21</td>
-    <td class="t1"><input type="checkbox" class="ures" id="myinput21" /><label class="click" for="myinput21" value="11"></label></td>
-    <td class="t1"><input type="checkbox" class="uresP" id="myinputP21" /><label class="clickP" for="myinputP21" value="0"></label></td>
-    <td class="t1"><input type="checkbox" class="uresSZ" id="myinputSZ21" /><label class="clickSZ" for="myinputSZ21" value="8"></label></td>
-    <td class="t1"> </td>
+    <td class="t1"><input type="radio" class="ures" id="myinput21" name="beosztas21"/><label class="click" for="myinput21" value="11"></label></td>
+    <td class="t1"><input type="radio" class="uresP" id="myinputP21" name="beosztas21"/><label class="clickP" for="myinputP21" value="0"></label></td>
+    <td class="t1"><input type="radio" class="uresSZ" id="myinputSZ21" name="beosztas21"/><label class="clickSZ" for="myinputSZ21" value="8"></label></td>
+    <td class="t1" onclick="katt('b2')"><input type="checkbox" class="uresB" id="myinputB2" name="beosztas21"/><label class="clickSZ" for="myinputB1" value="8"></label></td>
+    <td class="t1" onclick="katt('korr2')"><input type="number" value="0" class="uresKorr" id="myinputKorr2" /><label class="clickKorr" for="myinputKorr2" value="8"></label></td>
+
   </tr>
   <tr class="t1">
     <td class="t1 datum">22</td>
-    <td class="t1"><input type="checkbox" class="ures" id="myinput22" /><label class="click" for="myinput22" value="11"></label></td>
-    <td class="t1"><input type="checkbox" class="uresP" id="myinputP22" /><label class="clickP" for="myinputP22" value="0"></label></td>
-    <td class="t1"><input type="checkbox" class="uresSZ" id="myinputSZ22" /><label class="clickSZ" for="myinputSZ22" value="8"></label></td>
-    <td class="t1"> </td>
+    <td class="t1"><input type="radio" class="ures" id="myinput22" name="beosztas22"/><label class="click" for="myinput22" value="11"></label></td>
+    <td class="t1"><input type="radio" class="uresP" id="myinputP22" name="beosztas22"/><label class="clickP" for="myinputP22" value="0"></label></td>
+    <td class="t1"><input type="radio" class="uresSZ" id="myinputSZ22" name="beosztas22"/><label class="clickSZ" for="myinputSZ22" value="8"></label></td>
+    <td class="t1" onclick="katt('b2')"><input type="checkbox" class="uresB" id="myinputB2" name="beosztas22"/><label class="clickSZ" for="myinputB1" value="8"></label></td>
+    <td class="t1" onclick="katt('korr2')"><input type="number" value="0" class="uresKorr" id="myinputKorr2" /><label class="clickKorr" for="myinputKorr2" value="8"></label></td>
+
   </tr>
   <tr class="t1">
     <td class="t1 datum">23</td>
-    <td class="t1"><input type="checkbox" class="ures" id="myinput23" /><label class="click" for="myinput23" value="11"></label></td>
-    <td class="t1"><input type="checkbox" class="uresP" id="myinputP23" /><label class="clickP" for="myinputP23" value="0"></label></td>
-    <td class="t1"><input type="checkbox" class="uresSZ" id="myinputSZ23" /><label class="clickSZ" for="myinputSZ23" value="8"></label></td>
-    <td class="t1"> </td>
+    <td class="t1"><input type="radio" class="ures" id="myinput23" name="beosztas23"/><label class="click" for="myinput23" value="11"></label></td>
+    <td class="t1"><input type="radio" class="uresP" id="myinputP23" name="beosztas23"/><label class="clickP" for="myinputP23" value="0"></label></td>
+    <td class="t1"><input type="radio" class="uresSZ" id="myinputSZ23" name="beosztas23"/><label class="clickSZ" for="myinputSZ23" value="8"></label></td>
+    <td class="t1" onclick="katt('b2')"><input type="checkbox" class="uresB" id="myinputB2" name="beosztas23"/><label class="clickSZ" for="myinputB1" value="8"></label></td>
+    <td class="t1" onclick="katt('korr2')"><input type="number" value="0" class="uresKorr" id="myinputKorr2" /><label class="clickKorr" for="myinputKorr2" value="8"></label></td>
+
   </tr>
   <tr class="t1">
     <td class="t1 datum">24</td>
-    <td class="t1"><input type="checkbox" class="ures" id="myinput24" /><label class="click" for="myinput24" value="11"></label></td>
-    <td class="t1"><input type="checkbox" class="uresP" id="myinputP24" /><label class="clickP" for="myinputP24" value="0"></label></td>
-    <td class="t1"><input type="checkbox" class="uresSZ" id="myinputSZ24" /><label class="clickSZ" for="myinputSZ24" value="8"></label></td>
-    <td class="t1"> </td>
+    <td class="t1"><input type="radio" class="ures" id="myinput24" name="beosztas24"/><label class="click" for="myinput24" value="11"></label></td>
+    <td class="t1"><input type="radio" class="uresP" id="myinputP24" name="beosztas24"/><label class="clickP" for="myinputP24" value="0"></label></td>
+    <td class="t1"><input type="radio" class="uresSZ" id="myinputSZ24" name="beosztas24"/><label class="clickSZ" for="myinputSZ24" value="8"></label></td>
+    <td class="t1" onclick="katt('b2')"><input type="checkbox" class="uresB" id="myinputB2" name="beosztas24"/><label class="clickSZ" for="myinputB1" value="8"></label></td>
+    <td class="t1" onclick="katt('korr2')"><input type="number" value="0" class="uresKorr" id="myinputKorr2" /><label class="clickKorr" for="myinputKorr2" value="8"></label></td>
+
   </tr>
   <tr class="t1">
     <td class="t1 datum">25</td>
-    <td class="t1"><input type="checkbox" class="ures" id="myinput25" /><label class="click" for="myinput25" value="11"></label></td>
-    <td class="t1"><input type="checkbox" class="uresP" id="myinputP25" /><label class="clickP" for="myinputP25" value="0"></label></td>
-    <td class="t1"><input type="checkbox" class="uresSZ" id="myinputSZ25" /><label class="clickSZ" for="myinputSZ25" value="8"></label></td>
-    <td class="t1"> </td>
+    <td class="t1"><input type="radio" class="ures" id="myinput25" name="beosztas25"/><label class="click" for="myinput25" value="11"></label></td>
+    <td class="t1"><input type="radio" class="uresP" id="myinputP25" name="beosztas25"/><label class="clickP" for="myinputP25" value="0"></label></td>
+    <td class="t1"><input type="radio" class="uresSZ" id="myinputSZ25" name="beosztas25"/><label class="clickSZ" for="myinputSZ25" value="8"></label></td>
+    <td class="t1" onclick="katt('b2')"><input type="checkbox" class="uresB" id="myinputB2" name="beosztas25"/><label class="clickSZ" for="myinputB1" value="8"></label></td>
+    <td class="t1" onclick="katt('korr2')"><input type="number" value="0" class="uresKorr" id="myinputKorr2" /><label class="clickKorr" for="myinputKorr2" value="8"></label></td>
+
   </tr>
   <tr class="t1">
     <td class="t1 datum">26</td>
-    <td class="t1"><input type="checkbox" class="ures" id="myinput26" /><label class="click" for="myinput26" value="11"></label></td>
-    <td class="t1"><input type="checkbox" class="uresP" id="myinputP26" /><label class="clickP" for="myinputP26" value="0"></label></td>
-    <td class="t1"><input type="checkbox" class="uresSZ" id="myinputSZ26" /><label class="clickSZ" for="myinputSZ26" value="8"></label></td>
-    <td class="t1"> </td>
+    <td class="t1"><input type="radio" class="ures" id="myinput26" name="beosztas26"/><label class="click" for="myinput26" value="11"></label></td>
+    <td class="t1"><input type="radio" class="uresP" id="myinputP26" name="beosztas26"/><label class="clickP" for="myinputP26" value="0"></label></td>
+    <td class="t1"><input type="radio" class="uresSZ" id="myinputSZ26" name="beosztas26"/><label class="clickSZ" for="myinputSZ26" value="8"></label></td>
+    <td class="t1" onclick="katt('b2')"><input type="checkbox" class="uresB" id="myinputB2" name="beosztas26"/><label class="clickSZ" for="myinputB1" value="8"></label></td>
+    <td class="t1" onclick="katt('korr2')"><input type="number" value="0" class="uresKorr" id="myinputKorr2" /><label class="clickKorr" for="myinputKorr2" value="8"></label></td>
+
   </tr>
   <tr class="t1">
     <td class="t1 datum">27</td>
-    <td class="t1"><input type="checkbox" class="ures" id="myinput27" /><label class="click" for="myinput27" value="11"></label></td>
-    <td class="t1"><input type="checkbox" class="uresP" id="myinputP27" /><label class="clickP" for="myinputP27" value="0"></label></td>
-    <td class="t1"><input type="checkbox" class="uresSZ" id="myinputSZ27" /><label class="clickSZ" for="myinputSZ27" value="8"></label></td>
-    <td class="t1"> </td>
+    <td class="t1"><input type="radio" class="ures" id="myinput27" name="beosztas27"/><label class="click" for="myinput27" value="11"></label></td>
+    <td class="t1"><input type="radio" class="uresP" id="myinputP27" name="beosztas27"/><label class="clickP" for="myinputP27" value="0"></label></td>
+    <td class="t1"><input type="radio" class="uresSZ" id="myinputSZ27" name="beosztas27"/><label class="clickSZ" for="myinputSZ27" value="8"></label></td>
+    <td class="t1" onclick="katt('b2')"><input type="checkbox" class="uresB" id="myinputB2" name="beosztas27"/><label class="clickSZ" for="myinputB1" value="8"></label></td>
+    <td class="t1" onclick="katt('korr2')"><input type="number" value="0" class="uresKorr" id="myinputKorr2" /><label class="clickKorr" for="myinputKorr2" value="8"></label></td>
+
   </tr>
   <tr class="t1">
     <td class="t1 datum">28</td>
-    <td class="t1"><input type="checkbox" class="ures" id="myinput28" /><label class="click" for="myinput28" value="11"></label></td>
-    <td class="t1"><input type="checkbox" class="uresP" id="myinputP28" /><label class="clickP" for="myinputP28" value="0"></label></td>
-    <td class="t1"><input type="checkbox" class="uresSZ" id="myinputSZ28" /><label class="clickSZ" for="myinputSZ28" value="8"></label></td>
-    <td class="t1"> </td>
+    <td class="t1"><input type="radio" class="ures" id="myinput28" name="beosztas28"/><label class="click" for="myinput28" value="11"></label></td>
+    <td class="t1"><input type="radio" class="uresP" id="myinputP28" name="beosztas28"/><label class="clickP" for="myinputP28" value="0"></label></td>
+    <td class="t1"><input type="radio" class="uresSZ" id="myinputSZ28" name="beosztas28"/><label class="clickSZ" for="myinputSZ28" value="8"></label></td>
+    <td class="t1" onclick="katt('b2')"><input type="checkbox" class="uresB" id="myinputB2" name="beosztas28"/><label class="clickSZ" for="myinputB1" value="8"></label></td>
+    <td class="t1" onclick="katt('korr2')"><input type="number" value="0" class="uresKorr" id="myinputKorr2" /><label class="clickKorr" for="myinputKorr2" value="8"></label></td>
+
   </tr>
   <tr class="t1">
     <td class="t1 datum">29</td>
-    <td class="t1"><input type="checkbox" class="ures" id="myinput29" /><label class="click" for="myinput29" value="11"></label></td>
-    <td class="t1"><input type="checkbox" class="uresP" id="myinputP29" /><label class="clickP" for="myinputP29" value="0"></label></td>
-    <td class="t1"><input type="checkbox" class="uresSZ" id="myinputSZ29" /><label class="clickSZ" for="myinputSZ29" value="8"></label></td>
-    <td class="t1"> </td>
+    <td class="t1"><input type="radio" class="ures" id="myinput29" name="beosztas29"/><label class="click" for="myinput29" value="11"></label></td>
+    <td class="t1"><input type="radio" class="uresP" id="myinputP29" name="beosztas29"/><label class="clickP" for="myinputP29" value="0"></label></td>
+    <td class="t1"><input type="radio" class="uresSZ" id="myinputSZ29" name="beosztas29"/><label class="clickSZ" for="myinputSZ29" value="8"></label></td>
+    <td class="t1" onclick="katt('b2')"><input type="checkbox" class="uresB" id="myinputB2" name="beosztas29"/><label class="clickSZ" for="myinputB1" value="8"></label></td>
+    <td class="t1" onclick="katt('korr2')"><input type="number" value="0" class="uresKorr" id="myinputKorr2" /><label class="clickKorr" for="myinputKorr2" value="8"></label></td>
+
   </tr>
   <tr class="t1">
     <td class="t1 datum">30</td>
-    <td class="t1"><input type="checkbox" class="ures" id="myinput30" /><label class="click" for="myinput30" value="11"></label></td>
-    <td class="t1"><input type="checkbox" class="uresP" id="myinputP30" /><label class="clickP" for="myinputP30" value="0"></label></td>
-    <td class="t1"><input type="checkbox" class="uresSZ" id="myinputSZ30" /><label class="clickSZ" for="myinputSZ30" value="8"></label></td>
-    <td class="t1"> </td>
+    <td class="t1"><input type="radio" class="ures" id="myinput30" name="beosztas30"/><label class="click" for="myinput30" value="11"></label></td>
+    <td class="t1"><input type="radio" class="uresP" id="myinputP30" name="beosztas30"/><label class="clickP" for="myinputP30" value="0"></label></td>
+    <td class="t1"><input type="radio" class="uresSZ" id="myinputSZ30" name="beosztas30"/><label class="clickSZ" for="myinputSZ30" value="8"></label></td>
+    <td class="t1" onclick="katt('b2')"><input type="checkbox" class="uresB" id="myinputB2" name="beosztas30"/><label class="clickSZ" for="myinputB1" value="8"></label></td>
+    <td class="t1" onclick="katt('korr2')"><input type="number" value="0" class="uresKorr" id="myinputKorr2" /><label class="clickKorr" for="myinputKorr2" value="8"></label></td>
+
   </tr>
   <tr class="t1">
     <td class="t1 datum">31</td>
-    <td class="t1"><input type="checkbox" class="ures" id="myinput31" /><label class="click" for="myinput31" value="11"></label></td>
-    <td class="t1"><input type="checkbox" class="uresP" id="myinputP31" /><label class="clickP" for="myinputP31" value="0"></label></td>
-    <td class="t1"><input type="checkbox" class="uresSZ" id="myinputSZ31" /><label class="clickSZ" for="myinputSZ31" value="8"></label></td>
-    <td class="t1"> </td>
+    <td class="t1"><input type="radio" class="ures" id="myinput31" name="beosztas31"/><label class="click" for="myinput31" value="11"></label></td>
+    <td class="t1"><input type="radio" class="uresP" id="myinputP31" name="beosztas31"/><label class="clickP" for="myinputP31" value="0"></label></td>
+    <td class="t1"><input type="radio" class="uresSZ" id="myinputSZ31" name="beosztas31"/><label class="clickSZ" for="myinputSZ31" value="8"></label></td>
+    <td class="t1" onclick="katt('b2')"><input type="checkbox" class="uresB" id="myinputB2" name="beosztas31"/><label class="clickSZ" for="myinputB1" value="8"></label></td>
+    <td class="t1" onclick="katt('korr2')"><input type="number" value="0" class="uresKorr" id="myinputKorr2" /><label class="clickKorr" for="myinputKorr2" value="8"></label></td>
+
   </tr>
 
 
-
+</fieldset>
   </table>
+
   <button onclick="gen();">Generál</button>
 </body>
 </html>
