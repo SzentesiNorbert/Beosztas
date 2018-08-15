@@ -7,7 +7,11 @@
     display: inline-block;
 }
 .tabla2{
-  position: absolute;
+  position: relative;
+  display: inline-block;
+}
+.tabla3{
+  position: relative;
   display: inline-block;
 }
 
@@ -222,5 +226,105 @@ width: 30px;
 }
 
 .ures_b:checked + .click_b:before {
+  background: black;
+}
+
+.ures_c {
+  display: none;
+}
+.uresP_c {
+  display: none;
+}
+.uresB_c {
+  display: none;
+}
+.uresSZ_c {
+  display: none;
+}
+.uresKorr_c {
+width: 30px;
+}
+
+.click_c {
+  cursor: pointer;
+}
+.clickP_c {
+  cursor: pointer;
+}
+.clickSZ_c {
+  cursor: pointer;
+}
+.clickB_c {
+  cursor: pointer;
+}
+
+.t1_c {
+  border: 1px solid black;
+  font-weight: bold;
+  text-transform: uppercase;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.ures_c + .click_c:before {
+  width: content;
+  height: 20px;
+  border-radius: 2px;
+  background: white;
+  position: relative;
+  display: block;
+  content:"";
+}
+
+.uresP_c + .clickP_c:before {
+  width: content;
+  height: 20px;
+  border-radius: 2px;
+  background: white;
+  position: relative;
+  display: block;
+  content: "";
+}
+.uresB_c + .clickB_c:before {
+  width: content;
+  height: 20px;
+  border-radius: 2px;
+  background: white;
+  position: relative;
+  display: block;
+  content: "";
+}
+
+.uresSZ_c + .clickSZ_c:before {
+  width: content;
+  height: 20px;
+  border-radius: 2px;
+  background: white;
+  position: relative;
+  display: block;
+  content: "";
+}
+
+.uresKorr_c + .clickKorr_c:before {
+  width: content;
+  border-radius: 2px;
+  background: white;
+  position: relative;
+  display: block;
+  content: "";
+}
+
+.uresB_c:checked + .clickB_c:before {
+  background: yellow;
+}
+
+.uresP_c:checked + .clickP_c:before {
+  background: blue;
+}
+.uresSZ_c:checked + .clickSZ_c:before {
+  background: green;
+}
+
+.ures_c:checked + .click_c:before {
   background: black;
 }
