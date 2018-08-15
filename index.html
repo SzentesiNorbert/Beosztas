@@ -13,9 +13,8 @@
   Dolgozó Keresztneve:<input type="text" id="knev" name="knev"/>
   <button onclick="ujDolg();">Dolgozó</button>
   <hr>
-
+<div class="tabla1">
   <table class="table table-bordered t1"></table><br>
-  <fieldset>
   <table class="table table-bordered t1">
     <tr class="t1">
       <td class="t1 datum">D</td>
@@ -31,8 +30,8 @@
       <td class="t1" onclick="myInputM()"><input type="radio" class="ures" id="myinput" name="beosztas"/><label class="click" for="myinput" value="11"></label></td>
       <td class="t1" onclick="myInputP()"><input type="radio" class="uresP" id="myinputP" name="beosztas"/><label class="clickP" for="myinputP" value="0"></label></td>
       <td class="t1" onclick="katt('sz')"><input type="radio" class="uresSZ" id="myinputSZ1" name="beosztas"/><label class="clickSZ" for="myinputSZ1" value="8"></label></td>
-      <td class="t1" onclick="katt('B')"><input type="checkbox" class="uresB" id="myinputB1" name="beosztas"/><label class="clickB" for="myinputB1" value="8"></label></td>
-      <td class="t1" onclick="katt('korr')"><input type="number" min="-6" max="6" value="0" class="uresKorr" id="myinputKorr1" name="beosztas"/><label class="clickKorr" for="myinputKorr1"></label></td>
+      <td class="t1" onclick="myInputB()"><input type="checkbox" class="uresB" id="myinputB1" name="beosztas"/><label class="clickB" for="myinputB1" value="8"></label></td>
+      <td class="t1" onclick="myInputF('korr')"><input type="number" min="-6" max="6" value="0" class="uresKorr" id="myinputKorr1" name="beosztas"/><label class="clickKorr" for="myinputKorr1"></label></td>
     </tr>
     <tr class="t1">
       <td class="t1 datum">2</td>
@@ -306,10 +305,302 @@
 
   </tr>
 
-
-</fieldset>
   </table>
+</div>
+<div class="tabla2">
+  <table class="table table-bordered t1_b"></table><br>
+  <table class="table table-bordered t1_b">
+    <tr class="t1_b">
 
+      <td class="t1_b">MN</td>
+      <td class="t1_b">&nbsp P &nbsp</td>
+      <td class="t1_b">&nbsp SZ &nbsp</td>
+      <td class="t1_b">&nbsp B &nbsp</td>
+      <td class="t1_b">+/-</td>
+    </tr>
+
+    <tr class="t1_b">
+
+      <td class="t1_b" onclick="myInputM()_b"><input type="radio" class="ures_b" id="myinput_b" name="beosztas_b"/><label class="click_b" for="myinput_b" value="11"></label></td>
+      <td class="t1_b" onclick="myInputP()_b"><input type="radio" class="uresP_b" id="myinputP_b" name="beosztas_b"/><label class="clickP_b" for="myinputP_b" value="0"></label></td>
+      <td class="t1_b" onclick="katt('sz')_b"><input type="radio" class="uresSZ_b" id="myinputSZ1_b" name="beosztas_b"/><label class="clickSZ_b" for="myinputSZ1_b" value="8"></label></td>
+      <td class="t1_b" onclick="myInputB()_b"><input type="checkbox" class="uresB_b" id="myinputB1_b" name="beosztas_b"/><label class="clickB_b" for="myinputB1_b" value="8"></label></td>
+      <td class="t1_b" onclick="myInputF('korr')"><input type="number" min="-6" max="6" value="0" class="uresKorr" id="myinputKorr1" name="beosztas_b"/><label class="clickKorr" for="myinputKorr1"></label></td>
+    </tr>
+    <tr class="t1_b">
+
+      <td class="t1_b" onclick="myInputM()"><input type="radio" class="ures_b" id="myinput2_b" name="beosztas2_b"/><label class="click_b" for="myinput2_b" value="11"></label></td>
+      <td class="t1_b" onclick="katt('pi2')"><input type="radio" class="uresP_b" id="myinputP2_b" name="beosztas2_b"/><label class="clickP_b" for="myinputP2_b" value="0"></label></td>
+      <td class="t1_b" onclick="katt('sz2')"><input type="radio" class="uresSZ_b" id="myinputSZ2_b" name="beosztas2_b"/><label class="clickSZ_b" for="myinputSZ2_b" value="8"></label></td>
+        <td class="t1_b" onclick="katt('B')"><input type="checkbox" class="uresB_b" id="myinputB2_b" name="beosztas_b"/><label class="clickB_b" for="myinputB2_b" value="8"></label></td>
+      <td class="t1_b" onclick="katt('korr2')"><input type="number" min="-6" max="6" value="0" class="uresKorr" id="myinputKorr2" /><label class="clickKorr" for="myinputKorr2" value="8"></label></td>
+
+    </tr>
+    <tr class="t1_b">
+
+      <td class="t1_b"><input type="radio" class="ures_b" id="myinput3_b" name="beosztas3_b"/><label class="click_b" for="myinput3_b" value="11"></label></td>
+      <td class="t1_b"><input type="radio" class="uresP_b" id="myinputP3_b" name="beosztas3_b"/><label class="clickP_b" for="myinputP3_b" value="0"></label></td>
+      <td class="t1_b"><input type="radio" class="uresSZ_b" id="myinputSZ3_b" name="beosztas3_b"/><label class="clickSZ_b" for="myinputSZ3_b" value="11"></label></td>
+      <td class="t1_b" onclick="katt('B')"><input type="checkbox" class="uresB_b" id="myinputB3_b" name="beosztas3_B"/><label class="clickB_b" for="myinputB3_b" value="8"></label></td>
+      <td class="t1_b" onclick="katt('korr3')"><input type="number" min="-6" max="6" value="0" class="uresKorr" id="myinputKorr3" /><label class="clickKorr" for="myinputKorr3" value="8"></label></td>
+
+    </tr>
+    <tr class="t1_b">
+
+      <td class="t1_b"><input type="radio" class="ures_b" id="myinput4_b" name="beosztas4_b"/><label class="click_b" for="myinput4_b" value="11"></label></td>
+      <td class="t1_b"><input type="radio" class="uresP_b" id="myinputP4_b" name="beosztas4_b"/><label class="clickP_b" for="myinputP4_b" value="0"></label></td>
+      <td class="t1_b"><input type="radio" class="uresSZ_b" id="myinputSZ4_b" name="beosztas4_b"/><label class="clickSZ_b" for="myinputSZ4_b" value="8"></label></td>
+      <td class="t1_b" onclick="katt('B')"><input type="checkbox" class="uresB_b" id="myinputB4_b" name="beosztas_b"/><label class="clickB_b" for="myinputB4_b" value="8"></label></td>
+      <td class="t1_b" onclick="katt('korr4')"><input type="number" min="-6" max="6" value="0" class="uresKorr" id="myinputKorr4" /><label class="clickKorr" for="myinputKorr4" value="8"></label></td>
+
+    </tr>
+    <tr class="t1_b">
+
+      <td class="t1_b"><input type="radio" class="ures_b" id="myinput5_b" name="beosztas5_b"/><label class="click_b" for="myinput5_b" value="11"></label></td>
+      <td class="t1_b"><input type="radio" class="uresP_b" id="myinputP5_b" name="beosztas5_b"/><label class="clickP_b" for="myinputP5_b" value="0"></label></td>
+      <td class="t1_b"><input type="radio" class="uresSZ_b" id="myinputSZ5_b" name="beosztas5_b"/><label class="clickSZ_b" for="myinputSZ5_b" value="8"></label></td>
+        <td class="t1_b" onclick="katt('B')"><input type="checkbox" class="uresB_b" id="myinputB5_b" name="beosztas_b"/><label class="clickB_b" for="myinputB5_b" value="8"></label></td>
+      <td class="t1_b" onclick="katt('korr2')"><input type="number" min="-6" max="6" value="0" class="uresKorr" id="myinputKorr2" /><label class="clickKorr" for="myinputKorr2" value="8"></label></td>
+
+    </tr>
+    <tr class="t1_b">
+
+      <td class="t1_b"><input type="radio" class="ures_b" id="myinput6_b" name="beosztas6_b"/><label class="click_b" for="myinput6_b" value="11"></label></td>
+      <td class="t1_b"><input type="radio" class="uresP_b" id="myinputP6_b" name="beosztas6_b"/><label class="clickP_b" for="myinputP6_b" value="0"></label></td>
+      <td class="t1_b"><input type="radio" class="uresSZ_b" id="myinputSZ6_b" name="beosztas6_b"/><label class="clickSZ_b" for="myinputSZ6_b" value="8"></label></td>
+        <td class="t1_b" onclick="katt('B')"><input type="checkbox" class="uresB_b" id="myinputB6_b" name="beosztas"/><label class="clickB_b" for="myinputB6_b" value="8"></label></td>
+      <td class="t1_b" onclick="katt('korr2')"><input type="number" min="-6" max="6" value="0" class="uresKorr" id="myinputKorr2" /><label class="clickKorr" for="myinputKorr2" value="8"></label></td>
+
+    </tr>
+    <tr class="t1_b">
+
+      <td class="t1_b"><input type="radio" class="ures_b" id="myinput7_b" name="beosztas7_b"/><label class="click_b" for="myinput7_b" value="11"></label></td>
+      <td class="t1_b"><input type="radio" class="uresP_b" id="myinputP7_b" name="beosztas7_b"/><label class="clickP_b" for="myinputP7_b" value="0"></label></td>
+      <td class="t1_b"><input type="radio" class="uresSZ_b" id="myinputSZ7_b" name="beosztas7_b"/><label class="clickSZ_b" for="myinputSZ7_b" value="8"></label></td>
+        <td class="t1_b" onclick="katt('B')"><input type="checkbox" class="uresB_b" id="myinputB7_b" name="beosztas_b"/><label class="clickB_b" for="myinputB7_b" value="8"></label></td>
+      <td class="t1_b" onclick="katt('korr2')"><input type="number" min="-6" max="6" value="0" class="uresKorr" id="myinputKorr2" /><label class="clickKorr" for="myinputKorr2" value="8"></label></td>
+
+    </tr>
+    <tr class="t1_b">
+
+      <td class="t1_b"><input type="radio" class="ures_b" id="myinput8_b" name="beosztas8_b"/><label class="click_b" for="myinput8_b" value="11"></label></td>
+      <td class="t1_b"><input type="radio" class="uresP_b" id="myinputP8_b" name="beosztas8_b"/><label class="clickP_b" for="myinputP8_b" value="0"></label></td>
+      <td class="t1_b"><input type="radio" class="uresSZ_b" id="myinputSZ8_b" name="beosztas8_b"/><label class="clickSZ_b" for="myinputSZ8_b" value="8"></label></td>
+        <td class="t1_b" onclick="katt('B')"><input type="checkbox" class="uresB_b" id="myinputB8_b" name="beosztas_b"/><label class="clickB_b" for="myinputB8_b" value="8"></label></td>
+      <td class="t1_b" onclick="katt('korr2')"><input type="number" min="-6" max="6" value="0" class="uresKorr" id="myinputKorr2" /><label class="clickKorr" for="myinputKorr2" value="8"></label></td>
+
+    </tr>
+    <tr class="t1_b">
+
+      <td class="t1_b"><input type="radio" class="ures_b" id="myinput9_b" name="beosztas9_b"/><label class="click_b" for="myinput9_b" value="11"></label></td>
+      <td class="t1_b"><input type="radio" class="uresP_b" id="myinputP9_b" name="beosztas9_b"/><label class="clickP_b" for="myinputP9_b" value="0"></label></td>
+      <td class="t1_b"><input type="radio" class="uresSZ_b" id="myinputSZ9_b" name="beosztas9_b"/><label class="clickSZ_b" for="myinputSZ9_b" value="8"></label></td>
+        <td class="t1_b" onclick="katt('B')"><input type="checkbox" class="uresB_b" id="myinputB9_b" name="beosztas_b"/><label class="clickB_b" for="myinputB9_b" value="8"></label></td>
+      <td class="t1_b" onclick="katt('korr2')"><input type="number" min="-6" max="6" value="0" class="uresKorr" id="myinputKorr2" /><label class="clickKorr" for="myinputKorr2" value="8"></label></td>
+
+    </tr>
+    <tr class="t1_b">
+
+      <td class="t1_b"><input type="radio" class="ures_b" id="myinput10_b" name="beosztas10_b"/><label class="click_b" for="myinput10_b" value="11"></label></td>
+      <td class="t1_b"><input type="radio" class="uresP_b" id="myinputP10_b" name="beosztas10_b"/><label class="clickP_b" for="myinputP10_b" value="0"></label></td>
+      <td class="t1_b"><input type="radio" class="uresSZ_b" id="myinputSZ10_b" name="beosztas10_b"/><label class="clickSZ_b" for="myinputSZ10_b" value="8"></label></td>
+        <td class="t1_b" onclick="katt('B')"><input type="checkbox" class="uresB_b" id="myinputB10_b" name="beosztas_b"/><label class="clickB_b" for="myinputB10_b" value="8"></label></td>
+      <td class="t1_b" onclick="katt('korr2')"><input type="number" min="-6" max="6" value="0" class="uresKorr" id="myinputKorr2" /><label class="clickKorr" for="myinputKorr2" value="8"></label></td>
+
+    </tr>
+    <tr class="t1_b">
+
+      <td class="t1_b"><input type="radio" class="ures_b" id="myinput11_b" name="beosztas11_b"/><label class="click_b" for="myinput11_b" value="11"></label></td>
+      <td class="t1_b"><input type="radio" class="uresP_b" id="myinputP11_b" name="beosztas11_b"/><label class="clickP_b" for="myinputP11_b" value="0"></label></td>
+      <td class="t1_b"><input type="radio" class="uresSZ_b" id="myinputSZ11_b" name="beosztas11_b"/><label class="clickSZ_b" for="myinputSZ11_b" value="8"></label></td>
+        <td class="t1_b" onclick="katt('B')"><input type="checkbox" class="uresB_b" id="myinputB11_b" name="beosztas_b"/><label class="clickB_b" for="myinputB11_b" value="8"></label></td>
+      <td class="t1_b" onclick="katt('korr2')"><input type="number" min="-6" max="6" value="0" class="uresKorr" id="myinputKorr2" /><label class="clickKorr" for="myinputKorr2" value="8"></label></td>
+
+    </tr>
+    <tr class="t1_b">
+
+      <td class="t1_b"><input type="radio" class="ures_b" id="myinput12_b" name="beosztas12_b"/><label class="click_b" for="myinput12_b" value="11"></label></td>
+      <td class="t1_b"><input type="radio" class="uresP_b" id="myinputP12_b" name="beosztas12_b"/><label class="clickP_b" for="myinputP12_b" value="0"></label></td>
+      <td class="t1_b"><input type="radio" class="uresSZ_b" id="myinputSZ12_b" name="beosztas12_b"/><label class="clickSZ_b" for="myinputSZ12_b" value="8"></label></td>
+        <td class="t1_b" onclick="katt('B')"><input type="checkbox" class="uresB_b" id="myinputB12_b" name="beosztas"/><label class="clickB_b" for="myinputB12_b" value="8"></label></td>
+      <td class="t1_b" onclick="katt('korr2')"><input type="number" min="-6" max="6" value="0" class="uresKorr" id="myinputKorr2" /><label class="clickKorr" for="myinputKorr2" value="8"></label></td>
+
+    </tr>
+  </tr>
+  <tr class="t1_b">
+
+    <td class="t1_b"><input type="radio" class="ures_b" id="myinput13_b" name="beosztas13_b"/><label class="click_b" for="myinput13_b" value="11"></label></td>
+    <td class="t1_b"><input type="radio" class="uresP_b" id="myinputP13_b" name="beosztas13_b"/><label class="clickP_b" for="myinputP13_b"  value="0"></label></td>
+    <td class="t1_b"><input type="radio" class="uresSZ_b" id="myinputSZ13_b" name="beosztas13_b"/><label class="clickSZ_b" for="myinputSZ13_b"  value="8"></label></td>
+      <td class="t1_b" onclick="katt('B')"><input type="checkbox" class="uresB_b" id="myinputB13_b" name="beosztas_b"/><label class="clickB_b" for="myinputB13_b" value="8"></label></td>
+    <td class="t1_b" onclick="katt('korr2')"><input type="number" min="-6" max="6" value="0" class="uresKorr" id="myinputKorr2" /><label class="clickKorr" for="myinputKorr2" value="8"></label></td>
+
+  </tr>
+  <tr class="t1_b">
+
+    <td class="t1_b"><input type="radio" class="ures_b" id="myinput14_b" name="beosztas14_b"/><label class="click_b" for="myinput14_b" value="11"></label></td>
+    <td class="t1_b"><input type="radio" class="uresP_b" id="myinputP14_b" name="beosztas14_b"/><label class="clickP_b" for="myinputP14_b" value="0"></label></td>
+    <td class="t1_b"><input type="radio" class="uresSZ_b" id="myinputSZ14_b" name="beosztas14_b"/><label class="clickSZ_b" for="myinputSZ14_b" value="8"></label></td>
+      <td class="t1_b" onclick="katt('B')"><input type="checkbox" class="uresB_b" id="myinputB14_b" name="beosztas"/><label class="clickB_b" for="myinputB14_b" value="8"></label></td>
+    <td class="t1_b" onclick="katt('korr2')"><input type="number" min="-6" max="6" value="0" class="uresKorr" id="myinputKorr2" /><label class="clickKorr" for="myinputKorr2" value="8"></label></td>
+
+  </tr>
+  <tr class="t1_b">
+
+    <td class="t1_b"><input type="radio" class="ures_b" id="myinput15_b" name="beosztas15_b"/><label class="click_b" for="myinput15_b" value="11" ></label></td>
+    <td class="t1_b"><input type="radio" class="uresP_b" id="myinputP15_b" name="beosztas15_b"/><label class="clickP_b" for="myinputP15_b" value="0"></label></td>
+    <td class="t1_b"><input type="radio" class="uresSZ_b" id="myinputSZ15_b" name="beosztas15_b"/><label class="clickSZ_b" for="myinputSZ15_b" value="8"></label></td>
+      <td class="t1_b" onclick="katt('B')"><input type="checkbox" class="uresB_b" id="myinputB15_b" name="beosztas_b"/><label class="clickB_b" for="myinputB15_b" value="8"></label></td>
+    <td class="t1_b" onclick="katt('korr2')"><input type="number" min="-6" max="6" value="0" class="uresKorr" id="myinputKorr2" /><label class="clickKorr" for="myinputKorr2" value="8"></label></td>
+
+  </tr>
+  <tr class="t1_b">
+
+    <td class="t1_b"><input type="radio" class="ures_b" id="myinput16_b" name="beosztas16_b"/><label class="click_b" for="myinput16_b" value="11"></label></td>
+    <td class="t1_b"><input type="radio" class="uresP_b" id="myinputP16_b" name="beosztas16_b"/><label class="clickP_b" for="myinputP16_b" value="0"></label></td>
+    <td class="t1_b"><input type="radio" class="uresSZ_b" id="myinputSZ16_b" name="beosztas16_b"/><label class="clickSZ_b" for="myinputSZ16_b" value="8"></label></td>
+      <td class="t1_b" onclick="katt('B')"><input type="checkbox" class="uresB_b" id="myinputB16_b" name="beosztas_b"/><label class="clickB_b" for="myinputB16_b" value="8"></label></td>
+    <td class="t1_b" onclick="katt('korr2')"><input type="number" min="-6" max="6" value="0" class="uresKorr" id="myinputKorr2" /><label class="clickKorr" for="myinputKorr2" value="8"></label></td>
+
+  </tr>
+  <tr class="t1_b">
+
+    <td class="t1_b"><input type="radio" class="ures_b" id="myinput17_b" name="beosztas17_b"/><label class="click_b" for="myinput17_b" value="11"></label></td>
+    <td class="t1_b"><input type="radio" class="uresP_b" id="myinputP17_b" name="beosztas17_b"/><label class="clickP_b" for="myinputP17_b" value="0"></label></td>
+    <td class="t1_b"><input type="radio" class="uresSZ_b" id="myinputSZ17_b" name="beosztas17_b"/><label class="clickSZ_b" for="myinputSZ17_b" value="8"></label></td>
+      <td class="t1_b" onclick="katt('B')"><input type="checkbox" class="uresB_b" id="myinputB17_b" name="beosztas_b"/><label class="clickB_b" for="myinputB17_b" value="8"></label></td>
+    <td class="t1_b" onclick="katt('korr2')"><input type="number" min="-6" max="6" value="0" class="uresKorr" id="myinputKorr2" /><label class="clickKorr" for="myinputKorr2" value="8"></label></td>
+
+  </tr>
+  <tr class="t1_b">
+
+    <td class="t1_b"><input type="radio" class="ures_b" id="myinput18_b" name="beosztas18_b"/><label class="click_b" for="myinput18_b" value="11"></label></td>
+    <td class="t1_b"><input type="radio" class="uresP_b" id="myinputP18_b" name="beosztas18_b"/><label class="clickP_b" for="myinputP18_b" value="0"></label></td>
+    <td class="t1_b"><input type="radio" class="uresSZ_b" id="myinputSZ18_b" name="beosztas18_b"/><label class="clickSZ_b" for="myinputSZ18_b" value="8"></label></td>
+      <td class="t1_b" onclick="katt('B')"><input type="checkbox" class="uresB_b" id="myinputB18_b" name="beosztas_b"/><label class="clickB_b" for="myinputB18_b" value="8"></label></td>
+    <td class="t1_b" onclick="katt('korr2')"><input type="number" min="-6" max="6" value="0" class="uresKorr" id="myinputKorr2" /><label class="clickKorr" for="myinputKorr2" value="8"></label></td>
+
+  </tr>
+  <tr class="t1_b">
+
+    <td class="t1_b"><input type="radio" class="ures_b" id="myinput19_b" name="beosztas19_b"/><label class="click_b" for="myinput19_b" value="11"></label></td>
+    <td class="t1_b"><input type="radio" class="uresP_b" id="myinputP19_b" name="beosztas19_b"/><label class="clickP_b" for="myinputP19_b" value="0"></label></td>
+    <td class="t1_b"><input type="radio" class="uresSZ_b" id="myinputSZ19_b" name="beosztas19_b"/><label class="clickSZ_b" for="myinputSZ19_b" value="8"></label></td>
+      <td class="t1_b" onclick="katt('B')"><input type="checkbox" class="uresB_b" id="myinputB19_b" name="beosztas_b"/><label class="clickB_b" for="myinputB19_b" value="8"></label></td>
+    <td class="t1_b" onclick="katt('korr2')"><input type="number" min="-6" max="6" value="0" class="uresKorr" id="myinputKorr2" /><label class="clickKorr" for="myinputKorr2" value="8"></label></td>
+
+  </tr>
+  <tr class="t1_b">
+
+    <td class="t1_b"><input type="radio" class="ures_b" id="myinput20_b" name="beosztas20_b"/><label class="click_b" for="myinput20_b" value="11"></label></td>
+    <td class="t1_b"><input type="radio" class="uresP_b" id="myinputP20_b" name="beosztas20_b"/><label class="clickP_b" for="myinputP20_b" value="0"></label></td>
+    <td class="t1_b"><input type="radio" class="uresSZ_b" id="myinputSZ20_b" name="beosztas20_b"/><label class="clickSZ_b" for="myinputSZ20_b" value="8"></label></td>
+      <td class="t1_b" onclick="katt('B')"><input type="checkbox" class="uresB_b" id="myinputB20_b" name="beosztas_b"/><label class="clickB_b" for="myinputB20_b" value="8"></label></td>
+    <td class="t1_b" onclick="katt('korr2')"><input type="number" min="-6" max="6" value="0" class="uresKorr" id="myinputKorr2" /><label class="clickKorr" for="myinputKorr2" value="8"></label></td>
+
+  </tr>
+  <tr class="t1_b">
+
+    <td class="t1_b"><input type="radio" class="ures_b" id="myinput21_b" name="beosztas21_b"/><label class="click_b" for="myinput21_b" value="11"></label></td>
+    <td class="t1_b"><input type="radio" class="uresP_b" id="myinputP21_b" name="beosztas21_b"/><label class="clickP_b" for="myinputP21_b" value="0"></label></td>
+    <td class="t1_b"><input type="radio" class="uresSZ_b" id="myinputSZ21_b" name="beosztas21_b"/><label class="clickSZ_b" for="myinputSZ21_b" value="8"></label></td>
+      <td class="t1_b" onclick="katt('B')"><input type="checkbox" class="uresB_b" id="myinputB21_b" name="beosztas_b"/><label class="clickB_b" for="myinputB21_b" value="8"></label></td>
+    <td class="t1_b" onclick="katt('korr2')"><input type="number" min="-6" max="6" value="0" class="uresKorr" id="myinputKorr2" /><label class="clickKorr" for="myinputKorr2" value="8"></label></td>
+
+  </tr>
+  <tr class="t1_b">
+
+    <td class="t1_b"><input type="radio" class="ures_b" id="myinput22_b" name="beosztas22_b"/><label class="click_b" for="myinput22_b" value="11"></label></td>
+    <td class="t1_b"><input type="radio" class="uresP_b" id="myinputP22_b" name="beosztas22_b"/><label class="clickP_b" for="myinputP22_b" value="0"></label></td>
+    <td class="t1_b"><input type="radio" class="uresSZ_b" id="myinputSZ22_b" name="beosztas22_b"/><label class="clickSZ_b" for="myinputSZ22_b" value="8"></label></td>
+      <td class="t1_b" onclick="katt('B')"><input type="checkbox" class="uresB_b" id="myinputB22_b" name="beosztas_b"/><label class="clickB_b" for="myinputB22_b" value="8"></label></td>
+    <td class="t1_b" onclick="katt('korr2')"><input type="number" min="-6" max="6" value="0" class="uresKorr" id="myinputKorr2" /><label class="clickKorr" for="myinputKorr2" value="8"></label></td>
+
+  </tr>
+  <tr class="t1_b">
+
+    <td class="t1_b"><input type="radio" class="ures_b" id="myinput23_b" name="beosztas23_b"/><label class="click_b" for="myinput23_b" value="11"></label></td>
+    <td class="t1_b"><input type="radio" class="uresP_b" id="myinputP23_b" name="beosztas23_b"/><label class="clickP_b" for="myinputP23_b" value="0"></label></td>
+    <td class="t1_b"><input type="radio" class="uresSZ_b" id="myinputSZ23_b" name="beosztas23_b"/><label class="clickSZ_b" for="myinputSZ23_b" value="8"></label></td>
+      <td class="t1_b" onclick="katt('B')"><input type="checkbox" class="uresB_b" id="myinputB23_b" name="beosztas_b"/><label class="clickB_b" for="myinputB23_b" value="8"></label></td>
+    <td class="t1_b" onclick="katt('korr2')"><input type="number" min="-6" max="6" value="0" class="uresKorr" id="myinputKorr2" /><label class="clickKorr" for="myinputKorr2" value="8"></label></td>
+
+  </tr>
+  <tr class="t1_b">
+
+    <td class="t1_b"><input type="radio" class="ures_b" id="myinput24_b" name="beosztas24_b"/><label class="click_b" for="myinput24_b" value="11"></label></td>
+    <td class="t1_b"><input type="radio" class="uresP_b" id="myinputP24_b" name="beosztas24_b"/><label class="clickP_b" for="myinputP24_b" value="0"></label></td>
+    <td class="t1_b"><input type="radio" class="uresSZ_b" id="myinputSZ24_b" name="beosztas24_b"/><label class="clickSZ_b" for="myinputSZ24_b" value="8"></label></td>
+      <td class="t1_b" onclick="katt('B')"><input type="checkbox" class="uresB_b" id="myinputB24_b" name="beosztas_b"/><label class="clickB_b" for="myinputB24_b" value="8"></label></td>
+    <td class="t1_b" onclick="katt('korr2')"><input type="number" min="-6" max="6" value="0" class="uresKorr" id="myinputKorr2" /><label class="clickKorr" for="myinputKorr2" value="8"></label></td>
+
+  </tr>
+  <tr class="t1_b">
+
+    <td class="t1_b"><input type="radio" class="ures_b" id="myinput25_b" name="beosztas25_b"/><label class="click_b" for="myinput25_b" value="11"></label></td>
+    <td class="t1_b"><input type="radio" class="uresP_b" id="myinputP25_b" name="beosztas25_b"/><label class="clickP_b" for="myinputP25_b" value="0"></label></td>
+    <td class="t1_b"><input type="radio" class="uresSZ_b" id="myinputSZ25_b" name="beosztas25_b"/><label class="clickSZ_b" for="myinputSZ25_b" value="8"></label></td>
+      <td class="t1_b" onclick="katt('B')"><input type="checkbox" class="uresB_b" id="myinputB25_b" name="beosztas_b"/><label class="clickB_b" for="myinputB25_b" value="8"></label></td>
+    <td class="t1_b" onclick="katt('korr2')"><input type="number" min="-6" max="6" value="0" class="uresKorr" id="myinputKorr2" /><label class="clickKorr" for="myinputKorr2" value="8"></label></td>
+
+  </tr>
+  <tr class="t1_b">
+
+    <td class="t1_b"><input type="radio" class="ures_b" id="myinput26_b" name="beosztas26_b"/><label class="click_b" for="myinput26_b" value="11"></label></td>
+    <td class="t1_b"><input type="radio" class="uresP_b" id="myinputP26_b" name="beosztas26_b"/><label class="clickP_b" for="myinputP26_b" value="0"></label></td>
+    <td class="t1_b"><input type="radio" class="uresSZ_b" id="myinputSZ26_b" name="beosztas26_b"/><label class="clickSZ_b" for="myinputSZ26_b" value="8"></label></td>
+      <td class="t1_b" onclick="katt('B')"><input type="checkbox" class="uresB_b" id="myinputB26_b" name="beosztas_b"/><label class="clickB_b" for="myinputB26_b" value="8"></label></td>
+    <td class="t1_b" onclick="katt('korr2')"><input type="number" min="-6" max="6" value="0" class="uresKorr" id="myinputKorr2" /><label class="clickKorr" for="myinputKorr2" value="8"></label></td>
+
+  </tr>
+  <tr class="t1_b">
+
+    <td class="t1_b"><input type="radio" class="ures_b" id="myinput27_b" name="beosztas27_b"/><label class="click_b" for="myinput27_b" value="11"></label></td>
+    <td class="t1_b"><input type="radio" class="uresP_b" id="myinputP27_b" name="beosztas27_b"/><label class="clickP_b" for="myinputP27_b" value="0"></label></td>
+    <td class="t1_b"><input type="radio" class="uresSZ_b" id="myinputSZ27_b" name="beosztas27_b"/><label class="clickSZ_b" for="myinputSZ27_b" value="8"></label></td>
+      <td class="t1_b" onclick="katt('B')"><input type="checkbox" class="uresB_b" id="myinputB27_b" name="beosztas_b"/><label class="clickB_b" for="myinputB27_b" value="8"></label></td>
+    <td class="t1_b" onclick="katt('korr2')"><input type="number" min="-6" max="6" value="0" class="uresKorr" id="myinputKorr2" /><label class="clickKorr" for="myinputKorr2" value="8"></label></td>
+
+  </tr>
+  <tr class="t1_b">
+
+    <td class="t1_b"><input type="radio" class="ures_b" id="myinput28_b" name="beosztas28_b"/><label class="click_b" for="myinput28_b" value="11"></label></td>
+    <td class="t1_b"><input type="radio" class="uresP_b" id="myinputP28_b" name="beosztas28_b"/><label class="clickP_b" for="myinputP28_b" value="0"></label></td>
+    <td class="t1_b"><input type="radio" class="uresSZ_b" id="myinputSZ28_b" name="beosztas28_b"/><label class="clickSZ_b" for="myinputSZ28_b" value="8"></label></td>
+      <td class="t1_b" onclick="katt('B')"><input type="checkbox" class="uresB_b" id="myinputB28_b" name="beosztas_b"/><label class="clickB_b" for="myinputB28_b" value="8"></label></td>
+    <td class="t1_b" onclick="katt('korr2')"><input type="number" min="-6" max="6" value="0" class="uresKorr" id="myinputKorr2" /><label class="clickKorr" for="myinputKorr2" value="8"></label></td>
+
+  </tr>
+  <tr class="t1_b">
+
+    <td class="t1_b"><input type="radio" class="ures_b" id="myinput29_b" name="beosztas29_b"/><label class="click_b" for="myinput29_b" value="11"></label></td>
+    <td class="t1_b"><input type="radio" class="uresP_b" id="myinputP29_b" name="beosztas29_b"/><label class="clickP_b" for="myinputP29_b" value="0"></label></td>
+    <td class="t1_b"><input type="radio" class="uresSZ_b" id="myinputSZ29_b" name="beosztas29_b"/><label class="clickSZ_b" for="myinputSZ29_b" value="8"></label></td>
+      <td class="t1_b" onclick="katt('B')"><input type="checkbox" class="uresB_b" id="myinputB29_b" name="beosztas_b"/><label class="clickB_b" for="myinputB29_b" value="8"></label></td>
+    <td class="t1_b" onclick="katt('korr2')"><input type="number" min="-6" max="6" value="0" class="uresKorr" id="myinputKorr2" /><label class="clickKorr" for="myinputKorr2" value="8"></label></td>
+
+  </tr>
+  <tr class="t1_b">
+
+    <td class="t1_b"><input type="radio" class="ures_b" id="myinput30_b" name="beosztas30_b"/><label class="click_b" for="myinput30_b" value="11"></label></td>
+    <td class="t1_b"><input type="radio" class="uresP_b" id="myinputP30_b" name="beosztas30_b"/><label class="clickP_b" for="myinputP30_b" value="0"></label></td>
+    <td class="t1_b"><input type="radio" class="uresSZ_b" id="myinputSZ30_b" name="beosztas30_b"/><label class="clickSZ_b" for="myinputSZ30_b" value="8"></label></td>
+      <td class="t1_b" onclick="katt('B')"><input type="checkbox" class="uresB_b" id="myinputB30_b" name="beosztas_b"/><label class="clickB_b" for="myinputB30_b" value="8"></label></td>
+    <td class="t1_b" onclick="katt('korr2')"><input type="number" min="-6" max="6" value="0" class="uresKorr" id="myinputKorr2" /><label class="clickKorr" for="myinputKorr2" value="8"></label></td>
+
+  </tr>
+  <tr class="t1_b">
+
+    <td class="t1_b"><input type="radio" class="ures_b" id="myinput31_b" name="beosztas31_b"/><label class="click_b" for="myinput31_b" value="11"></label></td>
+    <td class="t1_b"><input type="radio" class="uresP_b" id="myinputP31_b" name="beosztas31_b"/><label class="clickP_b" for="myinputP31_b" value="0"></label></td>
+    <td class="t1_b"><input type="radio" class="uresSZ_b" id="myinputSZ31_b" name="beosztas31_b"/><label class="clickSZ_b" for="myinputSZ31_b" value="8"></label></td>
+      <td class="t1_b" onclick="katt('B')"><input type="checkbox" class="uresB_b" id="myinputB31_b" name="beosztas_b"/><label class="clickB_b" for="myinputB31_b" value="8"></label></td>
+    <td class="t1_b" onclick="katt('korr2')"><input type="number" min="-6" max="6" value="0" class="uresKorr" id="myinputKorr2" /><label class="clickKorr" for="myinputKorr2" value="8"></label></td>
+
+  </tr>
+  </table>
+</div>
+<br>
   <button onclick="gen();">Generál</button>
 </body>
 </html>

@@ -22,10 +22,10 @@ var sz =0;
 
   function myInputM(){
 
-    var mn = document.getElementById("myinput")
-    var pi = document.getElementById("myinputP")
-    var sz = document.getElementById("myinputSZ1")
-
+    var mn = document.getElementById('myInput')
+    var pi = document.getElementById('myInputP')
+    var sz = document.getElementById('myInputSZ1')
+    var b = document.getElementById('myInputB1')
   if (mn.clicked=true) {
     munkaOra =+11;
     pi = 0;
@@ -35,3 +35,11 @@ console.log(munkaOra);
 console.log(sz);
 
 }
+
+/*Munkaidő korrigálás*/
+
+var korr = document.getElementById('myInputKorr1')
+function fix(){
+  var munkaOra = munkaOra-korr
+}
+console.log(munkaOra);
