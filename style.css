@@ -14,6 +14,7 @@
   position: relative;
   display: inline-block;
 }
+
 .tabla4{
   position: relative;
   display: inline-block;
@@ -402,6 +403,11 @@ width: 30px;
 .clickP_d {
   cursor: pointer;
 }
+
+.clickPP_d {
+  cursor: pointer;
+}
+
 .clickSZ_d {
   cursor: pointer;
 }
@@ -413,6 +419,9 @@ width: 30px;
   display: none;
 }
 .uresP_d {
+  display: none;
+}
+.uresPP_d {
   display: none;
 }
 .uresB_d {
@@ -452,6 +461,17 @@ width: 30px;
   display: block;
   content: "";
 }
+
+.uresPP_d + .clickPP_d:before {
+  width: content;
+  height: 20px;
+  border-radius: 2px;
+  background: white;
+  position: relative;
+  display: block;
+  content: "";
+}
+
 .uresB_d + .clickB_d:before {
   width: content;
   height: 20px;
@@ -487,6 +507,9 @@ width: 30px;
 
 .uresP_d:checked + .clickP_d:before {
   background: blue;
+}
+.uresPP_d:checked + .clickPP_d:before {
+  background: purple;
 }
 .uresSZ_d:checked + .clickSZ_d:before {
   background: green;
