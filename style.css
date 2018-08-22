@@ -6,6 +6,7 @@
     position: relative;
     display: inline-block;
 }
+
 .tabla2{
   position: relative;
   display: inline-block;
@@ -40,7 +41,8 @@ h1 {
   background-color: black;
   color: white;
 }
-.ures {
+
+/*.ures {
   display: none;
 }
 .uresP {
@@ -54,7 +56,7 @@ h1 {
 }
 .uresSZ {
   display: none;
-}
+}*/
 .uresKorr {
 width: 30px;
 }
@@ -76,83 +78,83 @@ width: 30px;
   cursor: pointer;
 }
 
-.ures + .click:before {
+.ures + .click::before {
   width: content;
   height: 20px;
   border-radius: 2px;
   background: white;
   position: relative;
   display: block;
-  content:"";
+  content:" ";
 }
 
-.uresP + .clickP:before {
+.uresP + .clickP::before {
   width: content;
   height: 20px;
   border-radius: 2px;
   background: white;
   position: relative;
   display: block;
-  content: "";
+  content: " ";
 }
-.uresPP + .clickPP:before {
+.uresPP + .clickPP::before {
   width: content;
   height: 20px;
   border-radius: 2px;
   background: white;
   position: relative;
   display: block;
-  content: "";
+  content: " ";
 }
-.uresB + .clickB:before {
+.uresB + .clickB::before {
   width: content;
   height: 20px;
   border-radius: 2px;
   background: white;
   position: relative;
   display: block;
-  content: "";
+  content: " ";
 }
 
-.uresSZ + .clickSZ:before {
+.uresSZ + .clickSZ::before {
   width: content;
   height: 20px;
   border-radius: 2px;
   background: white;
   position: relative;
   display: block;
-  content: "";
+  content: " ";
 }
 
-.uresKorr + .clickKorr:before {
+.uresKorr + .clickKorr::before {
   width: content;
   border-radius: 2px;
   background: white;
   position: relative;
   display: block;
-  content: "";
+  content: " ";
 }
 
-.uresB:checked + .clickB:before {
+.uresB:checked + .clickB::before {
   background: yellow;
 }
 
-.uresP:checked + .clickP:before {
+.uresP:checked + .clickP::before {
   background: blue;
 }
-.uresPP:checked + .clickPP:before {
+.uresPP:checked + .clickPP::before {
   background: purple;
 }
-.uresSZ:checked + .clickSZ:before {
+.uresSZ:checked + .clickSZ::before {
   background: green;
 }
 
-.ures:checked + .click:before {
+.ures:checked + .click::before {
   background: black;
 }
 
 /*Tábla 2*/
-
+/*
 .ures_b {
   display: none;
 }
@@ -167,7 +169,7 @@ width: 30px;
 }
 .uresSZ_b {
   display: none;
-}
+}*/
 .uresKorr_b {
 width: 30px;
 }
@@ -196,7 +198,7 @@ width: 30px;
   text-align: center;
 }
 
-.ures_b + .click_b:before {
+.ures_b + .click_b::before {
   width: content;
   height: 20px;
   border-radius: 2px;
@@ -206,7 +208,7 @@ width: 30px;
   content:"";
 }
 
-.uresP_b + .clickP_b:before {
+.uresP_b + .clickP_b::before {
   width: content;
   height: 20px;
   border-radius: 2px;
@@ -215,7 +217,7 @@ width: 30px;
   display: block;
   content: "";
 }
-.uresPP_b + .clickPP_b:before {
+.uresPP_b + .clickPP_b::before {
   width: content;
   height: 20px;
   border-radius: 2px;
@@ -224,17 +226,7 @@ width: 30px;
   display: block;
   content: "";
 }
-.uresB_b + .clickB_b:before {
-  width: content;
-  height: 20px;
-  border-radius: 2px;
-  background: white;
-  position: relative;
-  display: block;
-  content: "";
-}
-
-.uresSZ_b + .clickSZ_b:before {
+.uresB_b + .clickB_b::before {
   width: content;
   height: 20px;
   border-radius: 2px;
@@ -244,7 +236,17 @@ width: 30px;
   content: "";
 }
 
-.uresKorr_b + .clickKorr_b:before {
+.uresSZ_b + .clickSZ_b::before {
+  width: content;
+  height: 20px;
+  border-radius: 2px;
+  background: white;
+  position: relative;
+  display: block;
+  content: "";
+}
+
+.uresKorr_b + .clickKorr_b::before {
   width: content;
   border-radius: 2px;
   background: white;
@@ -253,26 +255,26 @@ width: 30px;
   content: "";
 }
 
-.uresB_b:checked + .clickB_b:before {
+.uresB_b:checked + .clickB_b::before {
   background: yellow;
 }
 
-.uresP_b:checked + .clickP_b:before {
+.uresP_b:checked + .clickP_b::before {
   background: blue;
 }
-.uresPP_b:checked + .clickPP_b:before {
+.uresPP_b:checked + .clickPP_b::before {
   background: purple;
 }
-.uresSZ_b:checked + .clickSZ_b:before {
+.uresSZ_b:checked + .clickSZ_b::before {
   background: green;
 }
 
-.ures_b:checked + .click_b:before {
+.ures_b:checked + .click_b::before {
   background: black;
 }
 
 /*Tábla 3*/
-
+/*
 .ures_c {
   display: none;
 }
@@ -287,7 +289,7 @@ width: 30px;
 }
 .uresSZ_c {
   display: none;
-}
+}*/
 .uresKorr_c {
 width: 30px;
 }
@@ -314,7 +316,7 @@ width: 30px;
   text-align: center;
 }
 
-.ures_c + .click_c:before {
+.ures_c + .click_c::before {
   width: content;
   height: 20px;
   border-radius: 2px;
@@ -324,7 +326,7 @@ width: 30px;
   content:"";
 }
 
-.uresP_c + .clickP_c:before {
+.uresP_c + .clickP_c::before {
   width: content;
   height: 20px;
   border-radius: 2px;
@@ -334,7 +336,7 @@ width: 30px;
   content: "";
 }
 
-.uresPP_c + .clickPP_c:before {
+.uresPP_c + .clickPP_c::before {
   width: content;
   height: 20px;
   border-radius: 2px;
@@ -344,7 +346,7 @@ width: 30px;
   content: "";
 }
 
-.uresB_c + .clickB_c:before {
+.uresB_c + .clickB_c::before {
   width: content;
   height: 20px;
   border-radius: 2px;
@@ -354,7 +356,7 @@ width: 30px;
   content: "";
 }
 
-.uresSZ_c + .clickSZ_c:before {
+.uresSZ_c + .clickSZ_c::before {
   width: content;
   height: 20px;
   border-radius: 2px;
@@ -364,7 +366,7 @@ width: 30px;
   content: "";
 }
 
-.uresKorr_c + .clickKorr_c:before {
+.uresKorr_c + .clickKorr_c::before {
   width: content;
   border-radius: 2px;
   background: white;
@@ -373,21 +375,21 @@ width: 30px;
   content: "";
 }
 
-.uresB_c:checked + .clickB_c:before {
+.uresB_c:checked + .clickB_c::before {
   background: yellow;
 }
 
-.uresP_c:checked + .clickP_c:before {
+.uresP_c:checked + .clickP_c::before {
   background: blue;
 }
-.uresPP_c:checked + .clickPP_c:before {
+.uresPP_c:checked + .clickPP_c::before {
   background: purple;
 }
-.uresSZ_c:checked + .clickSZ_c:before {
+.uresSZ_c:checked + .clickSZ_c::before {
   background: green;
 }
 
-.ures_c:checked + .click_c:before {
+.ures_c:checked + .click_c::before {
   background: black;
 }
 
@@ -414,7 +416,7 @@ width: 30px;
 .clickB_d {
   cursor: pointer;
 }
-
+/*
 .ures_d {
   display: none;
 }
@@ -429,7 +431,7 @@ width: 30px;
 }
 .uresSZ_d {
   display: none;
-}
+}*/
 .uresKorr_d {
 width: 30px;
 }
@@ -442,7 +444,7 @@ width: 30px;
   text-align: center;
 }
 
-.ures_d + .click_d:before {
+.ures_d + .click_d::before {
   width: content;
   height: 20px;
   border-radius: 2px;
@@ -452,7 +454,7 @@ width: 30px;
   content:"";
 }
 
-.uresP_d + .clickP_d:before {
+.uresP_d + .clickP_d::before {
   width: content;
   height: 20px;
   border-radius: 2px;
@@ -462,7 +464,7 @@ width: 30px;
   content: "";
 }
 
-.uresPP_d + .clickPP_d:before {
+.uresPP_d + .clickPP_d::before {
   width: content;
   height: 20px;
   border-radius: 2px;
@@ -472,7 +474,7 @@ width: 30px;
   content: "";
 }
 
-.uresB_d + .clickB_d:before {
+.uresB_d + .clickB_d::before {
   width: content;
   height: 20px;
   border-radius: 2px;
@@ -482,7 +484,7 @@ width: 30px;
   content: "";
 }
 
-.uresSZ_d + .clickSZ_d:before {
+.uresSZ_d + .clickSZ_d::before {
   width: content;
   height: 20px;
   border-radius: 2px;
@@ -492,7 +494,7 @@ width: 30px;
   content: "";
 }
 
-.uresKorr_d + .clickKorr_d:before {
+.uresKorr_d + .clickKorr_d::before {
   width: content;
   border-radius: 2px;
   background: white;
@@ -501,20 +503,20 @@ width: 30px;
   content: "";
 }
 
-.uresB_d:checked + .clickB_d:before {
+.uresB_d:checked + .clickB_d::before {
   background: yellow;
 }
 
-.uresP_d:checked + .clickP_d:before {
+.uresP_d:checked + .clickP_d::before {
   background: blue;
 }
-.uresPP_d:checked + .clickPP_d:before {
+.uresPP_d:checked + .clickPP_d::before {
   background: purple;
 }
-.uresSZ_d:checked + .clickSZ_d:before {
+.uresSZ_d:checked + .clickSZ_d::before {
   background: green;
 }
 
-.ures_d:checked + .click_d:before {
+.ures_d:checked + .click_d::before {
   background: black;
 }
