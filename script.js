@@ -4,6 +4,7 @@ function ujDolg(){
   var vnev = document.getElementById('vnev').value;
   var knev = document.getElementById('knev').value;
   var table = document.getElementsByTagName('table')[0];
+  var table2 = document.getElementsByTagName('table')[1];
   var dolgozo = table.insertRow(0);
   var cell1 = dolgozo.insertCell(0);
   var cell2 = dolgozo.insertCell(1);

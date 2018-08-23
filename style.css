@@ -5,24 +5,30 @@
 .tabla1{
     position: relative;
     display: inline-block;
+    border: 5px double black;
 }
 
 .tabla2{
   position: relative;
   display: inline-block;
+  border: 5px double green;
 }
 .tabla3{
   position: relative;
   display: inline-block;
+  border: 5px double red;
 }
 
 .tabla4{
   position: relative;
   display: inline-block;
+  border: 5px double blue;
 }
 
+
+
 .t1 {
-  border: 1px solid black;
+  border: 3px solid black;
   font-weight: bold;
   text-transform: uppercase;
   vertical-align: middle;
@@ -42,7 +48,7 @@ h1 {
   color: white;
 }
 
-/*.ures {
+.ures {
   display: none;
 }
 .uresP {
@@ -56,7 +62,7 @@ h1 {
 }
 .uresSZ {
   display: none;
-}*/
+}
 .uresKorr {
 width: 30px;
 }
@@ -154,7 +160,7 @@ width: 30px;
 }
 
 /*Tábla 2*/
-/*
+
 .ures_b {
   display: none;
 }
@@ -169,7 +175,7 @@ width: 30px;
 }
 .uresSZ_b {
   display: none;
-}*/
+}
 .uresKorr_b {
 width: 30px;
 }
@@ -191,7 +197,7 @@ width: 30px;
 }
 
 .t1_b {
-  border: 1px solid black;
+  border: 3px solid green;
   font-weight: bold;
   text-transform: uppercase;
   vertical-align: middle;
@@ -274,7 +280,7 @@ width: 30px;
 }
 
 /*Tábla 3*/
-/*
+
 .ures_c {
   display: none;
 }
@@ -289,7 +295,7 @@ width: 30px;
 }
 .uresSZ_c {
   display: none;
-}*/
+}
 .uresKorr_c {
 width: 30px;
 }
@@ -309,7 +315,7 @@ width: 30px;
 
 
 .t1_c {
-  border: 1px solid black;
+  border: 3px solid red;
   font-weight: bold;
   text-transform: uppercase;
   vertical-align: middle;
@@ -416,7 +422,7 @@ width: 30px;
 .clickB_d {
   cursor: pointer;
 }
-/*
+
 .ures_d {
   display: none;
 }
@@ -431,13 +437,13 @@ width: 30px;
 }
 .uresSZ_d {
   display: none;
-}*/
+}
 .uresKorr_d {
 width: 30px;
 }
 
 .t1_d {
-  border: 1px solid black;
+  border: 3px solid blue;
   font-weight: bold;
   text-transform: uppercase;
   vertical-align: middle;
@@ -519,4 +525,20 @@ width: 30px;
 
 .ures_d:checked + .click_d::before {
   background: black;
+}
+/* Összesítés*/
+.t1_e {
+  position: relative;
+  display: block;
+  float: right;
+  border: 3px solid black;
+  font-weight: bold;
+  text-transform: uppercase;
+  vertical-align: middle;
+  text-align: center;
+}
+.osszesites {
+  position: relative;
+  display: block;
+  float: right;
 }
