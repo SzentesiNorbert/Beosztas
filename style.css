@@ -47,7 +47,7 @@ h1 {
   background-color: black;
   color: white;
 }
-
+/*
 .ures {
   display: none;
 }
@@ -62,7 +62,7 @@ h1 {
 }
 .uresSZ {
   display: none;
-}
+}*/
 .uresKorr {
 width: 30px;
 }
@@ -160,7 +160,7 @@ width: 30px;
 }
 
 /*Tábla 2*/
-
+/*
 .ures_b {
   display: none;
 }
@@ -175,7 +175,7 @@ width: 30px;
 }
 .uresSZ_b {
   display: none;
-}
+}*/
 .uresKorr_b {
 width: 30px;
 }
@@ -280,7 +280,7 @@ width: 30px;
 }
 
 /*Tábla 3*/
-
+/*
 .ures_c {
   display: none;
 }
@@ -295,7 +295,7 @@ width: 30px;
 }
 .uresSZ_c {
   display: none;
-}
+}*/
 .uresKorr_c {
 width: 30px;
 }
@@ -422,7 +422,7 @@ width: 30px;
 .clickB_d {
   cursor: pointer;
 }
-
+/*
 .ures_d {
   display: none;
 }
@@ -437,7 +437,7 @@ width: 30px;
 }
 .uresSZ_d {
   display: none;
-}
+}*/
 .uresKorr_d {
 width: 30px;
 }
@@ -527,18 +527,3 @@ width: 30px;
   background: black;
 }
 /* Összesítés*/
-.t1_e {
-  position: relative;
-  display: block;
-  float: right;
-  border: 3px solid black;
-  font-weight: bold;
-  text-transform: uppercase;
-  vertical-align: middle;
-  text-align: center;
-}
-.osszesites {
-  position: relative;
-  display: block;
-  float: right;
-}
