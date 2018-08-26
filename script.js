@@ -15,15 +15,16 @@ function ujDolg(){
 
 
 /*Munkaóra kiszámítás*/
-var Munka = 11;
-function myInputM(){
+var Munka=0;
+function myInputM()
+{
+ this.Munka = Munka + 11;
+console.log(this.Munka);
 
- Munka + 11;
-console.log(Munka);
 };
 
 function munkaOra() {
-  cell.innerHTML = dolgozo1;
+  cell.innerHTML = dolgozo1.this.Munka;
 
 return myInputM();
 
