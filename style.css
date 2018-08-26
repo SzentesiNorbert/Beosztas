@@ -527,3 +527,25 @@ width: 30px;
   background: black;
 }
 /* Összesítés*/
+.sum1 {
+  border: 2px solid black;
+  width: 175px;
+  display: inline-block;
+  position: absolute;
+  margin-left: 20px;
+}
+.empty {
+  background-color: black;
+}
+.dolgozo1{
+  border: 2px double black;
+}
+.dolgozo2{
+  border: 2px double green;
+}
+.dolgozo3{
+  border: 2px double red;
+}
+.dolgozo4{
+  border: 2px double blue;
+}
