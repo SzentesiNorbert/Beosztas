@@ -25,14 +25,28 @@ cella4=[];
 //cella[0]=false;
 function myInputM(x)
 {
+
   if (cella[x]==undefined) {
     cella[x]=false;
   }
+
+  if (cella[x]==false&&cellaSz[x]==true) {
+    this.Munka -= 11;
+
+  }
+
   if (cella[x]==false) {
     this.Munka += 11;
     cella[x]=true;
+}
+
+  if (cellaSz[x]==true){
+    this.Munka +=3;
+    this.Szabi -= 1;
+    cellaSz[x]=false;
   }
-  console.log(this.Munka);
+  frissit();
+
 };
 
   function myInputM_b(y)
@@ -40,11 +54,24 @@ function myInputM(x)
     if (cella2[y]==undefined) {
       cella2[y]=false;
     }
+
+    if (cella2[y]==false&&cellaSz2[y]==true) {
+      this.Munka_b -= 11;
+
+    }
+
     if (cella2[y]==false) {
       this.Munka_b += 11;
       cella2[y]=true;
+  }
+
+    if (cellaSz2[y]==true){
+      this.Munka_b +=3;
+      this.Szabi_b -= 1;
+      cellaSz2[y]=false;
     }
 
+frissit();
 console.log(this.Munka_b);
 
 };
@@ -54,11 +81,24 @@ function myInputM_c(z)
   if (cella3[z]==undefined) {
     cella3[z]=false;
   }
+
+  if (cella3[z]==false&&cellaSz3[z]==true) {
+    this.Munka_c -= 11;
+
+  }
+
   if (cella3[z]==false) {
     this.Munka_c += 11;
     cella3[z]=true;
+}
+
+  if (cellaSz3[z]==true){
+    this.Munka_c +=3;
+    this.Szabi_c -= 1;
+    cellaSz3[z]=false;
   }
 
+frissit();
 console.log(this.Munka_c);
 
 };
@@ -68,14 +108,35 @@ function myInputM_d(zz)
   if (cella4[zz]==undefined) {
     cella4[zz]=false;
   }
+
+  if (cella4[zz]==false&&cellaSz4[zz]==true) {
+    this.Munka_d -= 11;
+
+  }
+
   if (cella4[zz]==false) {
     this.Munka_d += 11;
     cella4[zz]=true;
-  }
+}
 
+  if (cellaSz4[zz]==true){
+    this.Munka_d +=3;
+    this.Szabi_d -= 1;
+    cellaSz4[zz]=false;
+
+  }
+frissit();
 console.log(this.Munka_d,);
 
 };
+/* Pihenőnap kiszámítás*/
+
+function myInputP(){
+  if (cella[x]==true) {
+    this.Munka - 11;
+  }
+  console.log(Munka);
+}
 
 /*Szabadság kiszámítás*/
 
@@ -88,19 +149,26 @@ cellaSz2 = [];
 cellaSz3 = [];
 cellaSz4 = [];
 
-//cella[0]=false;
+
 function myInputSz(x)
 {
   if (cellaSz[x]==undefined) {
     cellaSz[x]=false;
   }
   if (cellaSz[x]==false) {
-    this.Szabi += 8;
+    this.Szabi += 1;
+    this.Munka += 8;
     cellaSz[x]=true;
   }
+  if (cella[x]==false&&cellaSz[x]==true) {
+    this.Munka -= 11;
+  }
+    if (cella[x]==true){
+      this.Munka -= 11;
+  }
 
+frissit();
 
-console.log(this.Szabi);
 
 };
 
@@ -110,11 +178,18 @@ function myInputSz_b(y)
     cellaSz2[y]=false;
   }
   if (cellaSz2[y]==false) {
-    this.Szabi_b += 8;
+    this.Szabi_b += 1;
+    this.Munka_b += 8;
     cellaSz2[y]=true;
   }
+  if (cella2[y]==false&&cellaSz2[y]==true) {
+    this.Munka_b -= 11;
+  }
+  if (cella2[y]==true){
+    this.Munka_b -= 11;
+  }
 
-
+frissit();
 console.log(this.Szabi_b);
 
 };
@@ -125,11 +200,17 @@ function myInputSz_c(z)
     cellaSz3[z]=false;
   }
   if (cellaSz3[z]==false) {
-    this.Szabi_c += 8;
+    this.Szabi_c += 1;
+    this.Munka_c += 8;
     cellaSz3[z]=true;
   }
-
-
+  if (cella3[z]==false&&cellaSz3[z]==true) {
+    this.Munka_c -= 11;
+  }
+  if (cella3[z]==true){
+    this.Munka_c -= 11;
+  }
+frissit();
 console.log(this.Szabi_c);
 
 };
@@ -140,11 +221,17 @@ function myInputSz_d(zz)
     cellaSz4[zz]=false;
   }
   if (cellaSz4[zz]==false) {
-    this.Szabi_d += 8;
+    this.Szabi_d += 1;
+    this.Munka_d += 8;
     cellaSz4[zz]=true;
   }
-
-
+  if (cella4[zz]==false&&cellaSz4[zz]==true) {
+    this.Munka_d -= 11;
+  }
+  if (cella4[zz]==true){
+    this.Munka_d -= 11;
+}
+frissit();
 console.log(this.Szabi_d);
 
 };
@@ -168,14 +255,8 @@ function myInputB(x)
 console.log(this.Munka, cella[x]);
 
 
-};
-function munkaOra() {
-  cell.innerHTML = dolgozo1.this.Munka;
+};*/
 
-return myInputM();
-
-
-}
 /*Munkaidő korrigálás*/
 /*
 var korr = document.getElementById('myInputKorr1')
@@ -184,3 +265,19 @@ function fix(){
 }
 console.log(munkaOra);
 */
+
+
+/*Frissítés*/
+
+
+function frissit(){
+  document.getElementById('Munka_a').innerHTML=this.Munka;
+  document.getElementById('Munka_b').innerHTML=this.Munka_b;
+  document.getElementById('Munka_c').innerHTML=this.Munka_c;
+  document.getElementById('Munka_d').innerHTML=this.Munka_d;
+  document.getElementById('Szabi_a').innerHTML=this.Szabi;
+  document.getElementById('Szabi_b').innerHTML=this.Szabi_b;
+  document.getElementById('Szabi_c').innerHTML=this.Szabi_c;
+  document.getElementById('Szabi_d').innerHTML=this.Szabi_d;
+
+}
