@@ -95,62 +95,142 @@ if (cella[x]==true&&cellaPP[x]==true) {
 
   function myInputM_b(y)
   {
+    /*kattintás*/
     if (cella2[y]==undefined) {
       cella2[y]=false;
     }
-
+  /*Munkanapról Szabira*/
     if (cella2[y]==false&&cellaSz2[y]==true) {
       this.Munka_b -= 11;
-
+      console.log(cella2[y]);
+      console.log(cellaPP2[y]);
+      console.log(cellaSz2[y]);
+      console.log(this.Munka_b);
+      console.log(this.pp_b);
     }
 
-    if (cella2[y]==true&&cellaPP2[y]==true) {
-      this.Munka_b -= 11;
-      cella2[y]=false;
-      console.log(cella[x]);
-      console.log(cellaPP[x]);
-      console.log(cellaSz[x]);
-      console.log(this.Munka);
-      console.log(this.pp);
-    }
+  /*Sima munkanapra kattintás*/
 
     if (cella2[y]==false) {
       this.Munka_b += 11;
       cella2[y]=true;
+      console.log(cella2[y]);
+      console.log(cellaPP2[y]);
+      console.log(cellaSz2[y]);
+      console.log(this.Munka_b);
+      console.log(this.pp_b);
   }
 
-    if (cellaSz2[y]==true){
+  /*Munkanapról pihenőnapra*/
+
+  if (cella2[y]==true&&cellaPP2[y]==true) {
+    this.Munka_b -= 11;
+    cella2[y]=false;
+    console.log(cella2[y]);
+    console.log(cellaPP2[y]);
+    console.log(cellaSz2[y]);
+    console.log(this.Munka_b);
+    console.log(this.pp_b);
+  }
+
+
+  /*Szabadságról munkanapra*/
+    if (cellaSz2[y]==true&&cella2[y]==true){
       this.Munka_b +=3;
       this.Szabi_b -= 1;
       cellaSz2[y]=false;
+      console.log(cella2[y]);
+      console.log(cellaPP2[y]);
+      console.log(cellaSz2[y]);
+      console.log(this.Munka_b);
+      console.log(this.pp_b);
     }
 
-frissit();
-console.log(this.Munka_b);
+  /*Plusz pihenőről Munkanapra*/
+
+    if (cellaPP2[y]==true&&cella2[y]==false){
+        this.pp_b -= 1;
+        this.Munka_b+=11;
+        cella2[y]==true;
+        console.log(cella2[y]);
+        console.log(cellaPP2[y]);
+        console.log(cellaSz2[y]);
+        console.log(this.Munka_b);
+        console.log(this.pp_b);
+    }
+
+    frissit();
 
 };
 
 function myInputM_c(z)
 {
+  /*kattintás*/
   if (cella3[z]==undefined) {
     cella3[z]=false;
   }
-
+/*Munkanapról Szabira*/
   if (cella3[z]==false&&cellaSz3[z]==true) {
     this.Munka_c -= 11;
-
+    console.log(cella3[z]);
+    console.log(cellaPP3[z]);
+    console.log(cellaSz3[z]);
+    console.log(this.Munka_c);
+    console.log(this.pp_c);
   }
+
+/*Sima munkanapra kattintás*/
 
   if (cella3[z]==false) {
     this.Munka_c += 11;
     cella3[z]=true;
+    console.log(cella3[z]);
+    console.log(cellaPP3[z]);
+    console.log(cellaSz3[z]);
+    console.log(this.Munka_c);
+    console.log(this.pp_c);
 }
 
-  if (cellaSz3[z]==true){
+/*Munkanapról pihenőnapra*/
+
+if (cella3[z]==true&&cellaPP3[z]==true) {
+  this.Munka_c -= 11;
+  cella3[z]=false;
+  console.log(cella3[z]);
+  console.log(cellaPP3[z]);
+  console.log(cellaSz3[z]);
+  console.log(this.Munka_c);
+  console.log(this.pp_c);
+}
+
+
+/*Szabadságról munkanapra*/
+  if (cellaSz3[z]==true&&cella3[z]==true){
     this.Munka_c +=3;
     this.Szabi_c -= 1;
     cellaSz3[z]=false;
+    console.log(cella3[z]);
+    console.log(cellaPP3[z]);
+    console.log(cellaSz3[z]);
+    console.log(this.Munka_c);
+    console.log(this.pp_c);
   }
+
+/*Plusz pihenőről Munkanapra*/
+
+  if (cellaPP3[z]==true&&cella3[z]==false){
+      this.pp_c -= 1;
+      this.Munka_c+=11;
+      cella3[z]==true;
+      console.log(cella3[z]);
+      console.log(cellaPP3[z]);
+      console.log(cellaSz3[z]);
+      console.log(this.Munka_c);
+      console.log(this.pp_c);
+  }
+
+  frissit();
+
 
 frissit();
 console.log(this.Munka_c);
@@ -368,6 +448,125 @@ frissit();
 
 }
 
+
+function myInputPP_b(y) {
+  if (cellaPP2[y]==undefined) {
+    cellaPP2[y]=false;
+    cella.pp_b+=1;
+    console.log(cella2[y]);
+    console.log(cellaPP2[y]);
+    console.log(cellaSz2[y]);
+  }
+
+/*Sima plusz pihenőnap*/
+
+  if (cellaPP2[y]==false&&cella2[y]==undefined) {
+    this.pp_b += 1;
+    cellaPP2[y]=true;
+    console.log(cellaPP2[y]);
+    console.log(cella2[y]);
+    console.log(this.Munka_b);
+    console.log(this.pp_b);
+  }
+
+/*Munkanapról pihenőnapra vissza*/
+
+  if (cella2[y]==false&&cellaPP2[y]==true){
+      this.pp_b+=1;
+      this.Munka_b -= 11;
+      cellaPP2[y]=true;
+      cella2[y]=false;
+      console.log(cellaPP2[y]);
+      console.log(cella2[y]);
+      console.log(this.Munka_b);
+      console.log(this.pp_b);
+  }
+
+/*Munkanapról pihenőnapra*/
+
+  if (cella2[y]==true&&cellaPP2[y]==false){
+      this.pp_b+=1;
+      this.Munka_b -= 11;
+      cellaPP2[y]=true;
+      cella2[y]=false;
+      console.log(cellaPP2[y]);
+      console.log(cella2[y]);
+      console.log(this.Munka_b);
+      console.log(this.pp_b);
+  }
+
+
+
+  if (cellaSz2[y]==true) {
+
+    this.Szabi_b-=1;
+    this.Munka_b-=8;
+  }
+
+frissit();
+
+
+}
+
+function myInputPP_c(z) {
+  if (cellaPP3[z]==undefined) {
+    cellaPP3[z]=false;
+    cella.pp_c+=1;
+    console.log(cella3[z]);
+    console.log(cellaPP3[z]);
+    console.log(cellaSz3[z]);
+  }
+
+/*Sima plusz pihenőnap*/
+
+  if (cellaPP3[z]==false&&cella3[z]==undefined) {
+    this.pp_c += 1;
+    cellaPP3[z]=true;
+    console.log(cellaPP3[z]);
+    console.log(cella3[z]);
+    console.log(this.Munka_c);
+    console.log(this.pp_c);
+  }
+
+/*Munkanapról pihenőnapra vissza*/
+
+  if (cella3[z]==false&&cellaPP3[z]==true){
+      this.pp_c+=1;
+      this.Munka_c -= 11;
+      cellaPP3[z]=true;
+      cella3[z]=false;
+      console.log(cellaPP3[z]);
+      console.log(cella3[z]);
+      console.log(this.Munka_c);
+      console.log(this.pp_c);
+  }
+
+/*Munkanapról pihenőnapra*/
+
+  if (cella3[z]==true&&cellaPP3[z]==false){
+      this.pp_c+=1;
+      this.Munka_c -= 11;
+      cellaPP3[z]=true;
+      cella3[z]=false;
+      console.log(cellaPP3[z]);
+      console.log(cella3[z]);
+      console.log(this.Munka_c);
+      console.log(this.pp_c);
+  }
+
+
+
+  if (cellaSz3[z]==true) {
+
+    this.Szabi_c-=1;
+    this.Munka_c-=8;
+  }
+
+frissit();
+
+
+}
+
 /*Betegség kiszámítás*/
 /*
 var BSzabi=0;
@@ -412,4 +611,6 @@ function frissit(){
   document.getElementById('Szabi_c').innerHTML=this.Szabi_c;
   document.getElementById('Szabi_d').innerHTML=this.Szabi_d;
   document.getElementById('myInputPP').innerHTML=this.pp;
+  document.getElementById('myInputPP_b').innerHTML=this.pp_b;
+  document.getElementById('myInputPP_c').innerHTML=this.pp_c;
 }
